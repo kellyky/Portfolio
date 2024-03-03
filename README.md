@@ -4,8 +4,8 @@
 - Hangman: https://github.com/kellyky/hangman
 - Tic Tac Toe: https://github.com/kellyky/tic-tac-toe
 - Text Adventure in 2 languages: https://github.com/kellyky/text-adventure-game
-  - Python version: https://github.com/kellyky/Adventure-Game-Python
-  - Bash version: https://github.com/kellyky/freeCodeCamp-database-module/blob/main/my-stuff/text-game/text-adventure.sh TODO - move these to a single repo & update README
+  [x] Python version: https://github.com/kellyky/Adventure-Game-Python
+  [x] Bash version: https://github.com/kellyky/freeCodeCamp-database-module/blob/main/my-stuff/text-game/text-adventure.sh TODO - move these to a single repo & update README
  
   - Pixel Art Maker https://github.com/kellyky/pixel-art?tab=readme-ov-file
 

@@ -5,7 +5,7 @@ export default function Footer() {
           logo
         </div>
         <nav>
-          <ul>
+          <ul className="font-public-sans text-transform: uppercase">
             <li>Hamburger menu</li>
             <li>Home</li>
             <li>Portfolio</li>

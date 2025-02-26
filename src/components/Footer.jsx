@@ -1,6 +1,10 @@
 export default function Footer() {
   return (
-      <footer>
+      <footer style={{
+        color: 'var(--very-light-grey)',
+        backgroundColor: 'var(--greyish-dark-blue)',
+        textTransform: 'uppercase'
+      }}>
         <div>
           logo
         </div>

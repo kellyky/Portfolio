@@ -1,0 +1,21 @@
+export default function Footer() {
+  return (
+      <footer>
+        <div>
+          logo
+        </div>
+        <nav>
+          <ul>
+            <li>Hamburger menu</li>
+            <li>Home</li>
+            <li>Portfolio</li>
+            <li>Contact Me</li>
+          </ul>
+          <ul>
+            <li>GitHub</li>
+            <li>LinkedIn</li>
+          </ul>
+        </nav>
+      </footer>
+  )
+}

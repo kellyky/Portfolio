@@ -14,7 +14,7 @@ export default function Header() {
           <li>Contact Me</li>
         </ul>
       </nav>
-      <div className="block md:hidden  ">
+      <div className="block md:hidden">
         <HamburgerMenu />
       </div>
     </header>

@@ -3,7 +3,7 @@ import { Logo } from '../../assets/icons/Logo'
 
 export default function Header() {
   return (
-    <header className="flex justify-between items-center p-4 md:px-14 md:py-8 lg:py-4" >
+    <header className="sticky top-0 z-3 flex justify-between items-center p-8 md:px-14 md:py-8 lg:py-4 bg-very-light-grey" >
       <div>
         <Logo />
       </div>

@@ -21,14 +21,22 @@
   --color-bright-red: var(--bright-red);
   --font-ibarra: Ibarra-Real-Nova, sans-serif;
   --font-public-sans: Public-Sans, sans-serif;
+  --tracking-widest: 0.125em;
 }
 
 @font-face {
   font-family: Ibarra-Real-Nova;
   src:
-    url("/fonts/IbarraRealNova-Regular.ttf") format("truetype"),
+    url("/fonts/IbarraRealNova-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Ibarra-Real-Nova;
+  src:
     url("/fonts/IbarraRealNova-Bold.ttf") format("truetype");
-  font-weight: 400 700;
+  font-weight: 700;
   font-style: normal;
 }
 

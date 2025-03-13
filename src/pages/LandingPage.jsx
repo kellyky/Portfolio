@@ -42,7 +42,8 @@ export function LandingPage(){
         <picture>
           <source
             media="(min-width:1024px)"
-            srcSet="/assets/images/headshot-desktop.jpg"
+            srcSet="/assets/images/headshot_no_bg.png"
+            // srcSet="/assets/images/headshot-desktop.jpg"
           />
           <source
             media="(min-width:768px)"

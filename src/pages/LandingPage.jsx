@@ -29,8 +29,9 @@ export function LandingPage(){
             text-greyish-dark-blue md:w-4/5 lg:w-4/5">
             Hey, I'm Kelly Popko and I am a software developer
           </h1>
-          <Button isPrimary={true} className="inline-flex w-3/5
-            md:w-2/5 lg:h-1/8  bg-dark-blue items-center font-public-sans
+          <Button isPrimary={true} className="inline-flex
+            sm:max-w-xs max-w-3xs md:w-2/5 lg:h-1/8 lg:w-1/2
+            bg-dark-blue items-center font-public-sans
             text-light-grey uppercase md:absolute md:bottom-0">About Me
           </Button>
         </div>

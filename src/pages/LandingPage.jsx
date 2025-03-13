@@ -19,7 +19,7 @@ export function LandingPage(){
             className="w-full"
           />
         </picture>
-        <div className="relative flex flex-col gap-4 bg-white
+        <div className="relative flex flex-col gap-4 bg-very-light-grey
           md:justify-center md:absolute md:bottom-0 md:w-3/4
           md:h-278/600 lg:w-2/5 lg:h-3/5"
         >

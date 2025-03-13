@@ -3,12 +3,16 @@ import { Logo } from '../../assets/icons/Logo'
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-3 flex justify-between items-center p-8 md:px-14 md:py-8 lg:py-4 bg-very-light-grey" >
+    <header className="sticky top-0 z-3 flex justify-between items-center
+      p-8 md:py-8 lg:py-8 bg-very-light-grey"
+    >
       <div>
         <Logo />
       </div>
       <nav>
-        <ul className="uppercase hidden md:flex md:gap-2">
+        <ul className="uppercase hidden md:flex md:gap-12 lg:gap-8
+          text-xs text-greyish-dark-blue tracking-widest font-public-sans
+          ">
           <li>Home</li>
           <li>Portfolio</li>
           <li>Contact Me</li>

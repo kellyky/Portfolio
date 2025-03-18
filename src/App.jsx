@@ -1,16 +1,8 @@
+import Routes from './routes'
 import './App.css'
-import Footer from './components/Footer/Footer'
-import { LandingPage } from './pages/LandingPage'
 
 function App() {
-
-  return (
-    <>
-      <Header />
-      <LandingPage />
-      <Footer />
-    </>
-  )
+  return <Routes />;
 }
 
 export default App

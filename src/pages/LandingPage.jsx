@@ -1,6 +1,6 @@
 import Button from '../components/Button/Button'
 
-export function LandingPage(){
+export default function LandingPage(){
   return(
     <main className="h-full grow-1 self-center px-8">
       <section className="flex flex-col gap-4 relative">

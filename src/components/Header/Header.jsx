@@ -1,7 +1,14 @@
+import { useState } from 'react';
 import { HamburgerMenu } from '../../assets/icons/HamburgerMenu'
 import { Logo } from '../../assets/icons/Logo'
+import { Modal } from '../Modal/Modal'
+
 
 export default function Header() {
+  const [showModal, setShowModal] = useState(false);
+  function handleClose(){
+    setShowModal(previous => !previous)
+  }
   return (
     <header className="sticky top-0 z-3 flex justify-between items-center
       p-8 md:py-8 lg:py-8 bg-very-light-grey"
@@ -19,7 +26,10 @@ export default function Header() {
         </ul>
       </nav>
       <div className="block md:hidden">
-        <HamburgerMenu />
+        <button onClick={handleClose}>
+          <HamburgerMenu hide={showModal} />
+        </button>
+        {showModal && <Modal />}
       </div>
     </header>
   )

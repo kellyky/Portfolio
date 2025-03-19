@@ -1,5 +1,6 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import LandingPage from './pages/LandingPage'
+import PortfolioPage from './pages/PortfolioPage'
 
 const router = createBrowserRouter(
   [

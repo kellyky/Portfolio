@@ -36,14 +36,22 @@ export default function LandingPage(){
             text-greyish-dark-blue md:w-4/5 lg:w-4/5">
             Hey, I'm Kelly Popko and I am a software developer
           </h1>
-          <Button isPrimary={true} className="inline-flex
+          <Button
+            isButton={false}
+            isPrimary={true}
+            href="#about-me"
+            className="inline-flex group
+            transition-all delay-300 duration-150 ease-in-out
+            cursor-pointer hover:bg-muted-cyan hover:text-white
             sm:max-w-xs max-w-3xs md:w-2/5 lg:h-1/8 lg:w-1/2
             bg-dark-blue items-center font-public-sans
-            text-light-grey uppercase md:absolute md:bottom-0">About Me
+            text-light-grey uppercase md:absolute md:bottom-0">
+              About Me
           </Button>
         </div>
       </section>
-      <section className="flex flex-col gap-8 my-16
+      <section id="about-me"
+        className="flex flex-col gap-8 my-16
         md:flex-row md:justify-center md:gap-14
         lg:flex-row
         ">
@@ -79,6 +87,7 @@ export default function LandingPage(){
             xl:tracking-wide xl:text-xl
           ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel ligula id odio scelerisque aliquet. Integer non nisi vitae justo efficitur sagittis. Vivamus dictum, odio non vehicula gravida, nunc arcu laoreet metus, vel ultricies odio justo nec odio. Praesent sit amet feugiat enim. Duis aliquam, erat eget gravida vehicula, ligula elit blandit eros, nec vehicula purus odio ac libero. Integer auctor elit nec erat pharetra feugiat.</article>
           <Button isPrimary={false}
+            isButton={true}
             className="uppercase border py-4
               w-3xs
               md:w-11/20 lg:w-1/2 xl:w-xs 2xl:w-sm

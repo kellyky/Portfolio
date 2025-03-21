@@ -14,8 +14,19 @@ export default function Footer() {
           </ul>
         </nav>
         <ul className="flex px-10 gap-5 items-center justify-around">
-          <li><GitHub /></li>
-          <li><LinkedIn /></li>
+          <li><a href="https://github.com/kellyky/" target="_blank">
+            <GitHub
+              className="hover:fill-muted-cyan transition-colors
+            delay-150 duration-300"
+            />
+          </a></li>
+          <li><a href="https://linkedin.com/in/kelly-popko/" target="_blank">
+          <LinkedIn
+            className="hover:fill-muted-cyan transition-colors 
+            delay-150 duration-300"
+            />
+          </a></li>
+
         </ul>
       </footer>
   )

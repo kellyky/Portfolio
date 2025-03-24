@@ -1,9 +1,10 @@
 import { createPortal } from 'react-dom';
+import { useEffect } from 'react';
 
 export function Modal() {
   return createPortal(
     <>
-      <div className="absolute z-10 top-20 right-8 size-50 md:hidden">
+      <div className="fixed z-10 top-20 right-8 size-50 md:hidden">
         <dialog open
           className="
           w-50 h-45

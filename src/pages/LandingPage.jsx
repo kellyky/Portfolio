@@ -1,8 +1,15 @@
+import { use } from 'react'
 import Button from '../components/Button/Button'
+import ModalContext from '../store/modal-context'
 
 export default function LandingPage(){
+  const { modalState } = use(ModalContext);
+
   return(
-    <>
+    <main className={
+      `size-full grow-1 self-center px-8
+      ${modalState ? "blur-xs overflow-hidden" : ""}`
+      }>
       <section className="flex flex-col gap-4 relative">
         <picture>
           <source
@@ -82,6 +89,6 @@ export default function LandingPage(){
           >Go to Portfolio</Button>
         </div>
       </section>
-    </>
+    </main>
   )
 }

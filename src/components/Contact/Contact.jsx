@@ -28,7 +28,7 @@ export default function Contact() {
         border-greyish-dark-blue/10
         border-y-1
       " />
-      <Button isPrimary={false}
+      <Button isPrimary={false} isButton={true}
         className="uppercase border py-4
           w-3xs
           md:w-11/20 lg:w-3xs xl:w-xs 2xl:w-sm

@@ -24,7 +24,8 @@ export default function Header() {
         </ul>
       </nav>
       <div className="block md:hidden">
-        <button onClick={closeModal}>
+        <button onClick={closeModal}
+          id="hamburger-menu" aria-label="hamburger menu">
           <HamburgerMenu hide={modalState} />
         </button>
         {modalState && <Modal />}

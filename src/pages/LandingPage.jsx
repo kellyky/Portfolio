@@ -14,14 +14,14 @@ export default function LandingPage(){
         <picture>
           <source
             media="(min-width:1024px)"
-            srcSet="/assets/images/hero-desktop.jpg"
+            srcSet="/assets/images/hero-desktop.webp"
           />
           <source
             media="(min-width:768px)"
-            srcSet="/assets/images/hero-tablet.jpg"
+            srcSet="/assets/images/hero-tablet.webp"
           />
           <img
-            src="/assets/images/hero-mobile.jpg"
+            src="/assets/images/hero-mobile.webp"
             alt="Hero"
             className="w-full"
           />
@@ -58,13 +58,13 @@ export default function LandingPage(){
         <picture>
           <source
             media="(min-width:1024px)"
-            srcSet="/assets/images/headshot-desktop.jpg"
+            srcSet="/assets/images/headshot-desktop.webp"
           />
           <source
             media="(min-width:768px)"
-            srcSet="/assets/images/headshot-tablet.jpg"
+            srcSet="/assets/images/headshot-tablet.webp"
           />
-          <img src="/assets/images/headshot-mobile.jpg" alt="TODO: PLACEHOLDER"
+          <img src="/assets/images/headshot-mobile.webp" alt="TODO: PLACEHOLDER"
           />
         </picture>
         <div className="border-y-2 flex flex-col

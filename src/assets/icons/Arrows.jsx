@@ -13,6 +13,7 @@ export default function Arrows() {
         width="48"
         height="48"
         fill="black"
+        stroke="none"
       />
       <path d="M16 26L24 30L32 26"
         className="group-hover:stroke-white"

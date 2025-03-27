@@ -16,14 +16,20 @@ export default function LandingPage(){
           <source
             media="(min-width:1024px)"
             srcSet="/assets/images/hero-desktop.webp"
+            width="1110"
+            height="600"
           />
           <source
             media="(min-width:768px)"
             srcSet="/assets/images/hero-tablet.webp"
+            width="688"
+            height="600"
           />
           <img
             src="/assets/images/hero-mobile.webp"
             alt="Hero"
+            width="311"
+            height="271"
             className="w-full"
           />
         </picture>
@@ -60,12 +66,19 @@ export default function LandingPage(){
           <source
             media="(min-width:1024px)"
             srcSet="/assets/images/headshot-desktop.webp"
+            width="540"
+            height="600"
           />
           <source
             media="(min-width:768px)"
             srcSet="/assets/images/headshot-tablet.webp"
+            width="281"
+            height="600"
           />
-          <img src="/assets/images/headshot-mobile.webp" alt="TODO: PLACEHOLDER"
+          <img src="/assets/images/headshot-mobile.webp"
+            alt="TODO: PLACEHOLDER"
+            width="346"
+            height="311"
           />
         </picture>
         <div className="border-y-2 flex flex-col

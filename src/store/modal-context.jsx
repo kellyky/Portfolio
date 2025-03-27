@@ -1,4 +1,4 @@
-import { createContext, useState } from 'react';
+import { createContext, memo, useState } from 'react';
 
 const ModalContext = createContext(
   {
@@ -7,7 +7,7 @@ const ModalContext = createContext(
   }
 )
 
-export function ModalContextProvider({children}){
+function ModalContextProviderComponent({children}){
   const [showModal, setShowModal] = useState(false);
 
   function handleClose(){
@@ -26,4 +26,5 @@ export function ModalContextProvider({children}){
   )
 }
 
+export const ModalContextProvider = memo(ModalContextProviderComponent);
 export default ModalContext;

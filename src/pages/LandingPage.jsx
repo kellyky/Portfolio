@@ -1,3 +1,4 @@
+import { Link } from 'react-router'
 import { use } from 'react'
 import Button from '../components/Button/Button'
 import ModalContext from '../store/modal-context'
@@ -99,16 +100,18 @@ export default function LandingPage(){
             lg:tracking-wide lg:text-lg
             xl:tracking-wide xl:text-xl
           ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel ligula id odio scelerisque aliquet. Integer non nisi vitae justo efficitur sagittis. Vivamus dictum, odio non vehicula gravida, nunc arcu laoreet metus, vel ultricies odio justo nec odio. Praesent sit amet feugiat enim. Duis aliquam, erat eget gravida vehicula, ligula elit blandit eros, nec vehicula purus odio ac libero. Integer auctor elit nec erat pharetra feugiat.</article>
-          <Button isPrimary={false}
-            isButton={true}
-            className="uppercase border py-4
-              w-3xs
-              md:w-11/20 lg:w-1/2 xl:w-xs 2xl:w-sm
-              text-greyish-dark-blue border-greyish-dark-blue
-              text-xs
-              xl:text-lg
-            "
-          >Go to Portfolio</Button>
+          <Link to="/portfolio" >
+            <Button isPrimary={false}
+              isButton={true}
+              className="uppercase border py-4
+                w-3xs
+                md:w-11/20 lg:w-1/2 xl:w-xs 2xl:w-sm
+                text-greyish-dark-blue border-greyish-dark-blue
+                text-xs
+                xl:text-lg
+              "
+            >Go to Portfolio</Button>
+          </Link>
         </div>
       </section>
     </main>

@@ -1,7 +1,6 @@
 import { use } from 'react'
 import Button from '../components/Button/Button'
 import ModalContext from '../store/modal-context'
-import Contact from '../components/Contact/Contact'
 
 export default function LandingPage(){
   const { modalState } = use(ModalContext);
@@ -112,7 +111,6 @@ export default function LandingPage(){
           >Go to Portfolio</Button>
         </div>
       </section>
-      <Contact />
     </main>
   )
 }

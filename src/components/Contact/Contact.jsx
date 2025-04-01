@@ -3,6 +3,8 @@ import Button from '../Button/Button'
 export default function Contact() {
   return (
     <section className="flex flex-col gap-8 my-12
+        @container
+        px-8
         flex
         flex-col
         items-center
@@ -30,8 +32,10 @@ export default function Contact() {
       " />
       <Button isPrimary={false} isButton={true}
         className="uppercase border py-4
-          w-3xs
-          md:w-11/20 lg:w-3xs xl:w-xs 2xl:w-sm
+          px-8
+          md:px-0
+          md:w-[40cqw]
+          lg:w-[30cqw]
           text-greyish-dark-blue border-greyish-dark-blue
           text-xs
           xl:text-lg

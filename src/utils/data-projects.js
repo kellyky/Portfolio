@@ -1,21 +1,26 @@
 export const PROJECTS = [
-  // Array of each project I choose to highlight
   {
     id: 1,
     name: "Temperature Converter",
-    description: "",
-    image: "/images/projects/temperature-converter.webp",
+    description: "Converting temperatures since 2025.",
+    image: "public/assets/images/projects/temperature-converter.png",
   },
   {
     id: 2,
     name: "Mastermind",
     description: "Text-based Ruby implementation of the classic Mastermind game. Player attempts to crack a 4-color code in 12 attempts. Command line intreface.",
-    image: "/images/projects/to-do-list.webp",
+    image: "public/assets/images/projects/mastermind.png",
   },
   {
     id: 3,
     name: "Hangman",
     description: "A text-based version of the classic game, Hangman to play in your terminal.",
-    image: "/images/projects/hangman.webp",
+    image: "public/assets/images/projects/hangman.png",
+  },
+  {
+    id: 4,
+    name: "INCI List Maker",
+    description: "Create list of INCI ingredients from spreadsheet recipe.",
+    image: "public/assets/images/projects/inci-list-maker.png",
   }
 ]

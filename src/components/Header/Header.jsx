@@ -1,4 +1,5 @@
-import { use, useState } from 'react';
+import { use, useState } from 'react'
+import { NavLink } from 'react-router'
 import { HamburgerMenu } from '../../assets/icons/HamburgerMenu'
 import { Logo } from '../../assets/icons/Logo'
 import { Modal } from '../Modal/Modal'
@@ -18,9 +19,24 @@ export default function Header() {
         <ul className="uppercase hidden md:flex md:gap-12 lg:gap-8
           text-xs text-greyish-dark-blue tracking-widest font-public-sans
           ">
-          <li>Home</li>
-          <li>Portfolio</li>
-          <li>Contact Me</li>
+          <li>
+            <NavLink
+              to="/"
+              className={({ isActive, }) => isActive ? "text-muted-cyan" : "" }
+            >Home</NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/portfolio"
+              className={({ isActive, }) => isActive ? "text-muted-cyan" : "" }
+            >Portfolio</NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/contact"
+              className={({ isActive, }) => isActive ? "text-muted-cyan" : "" }
+            >Contact Me</NavLink>
+          </li>
         </ul>
       </nav>
       <div className="block md:hidden">

@@ -1,5 +1,6 @@
 import { createPortal } from 'react-dom';
 import { useEffect } from 'react';
+import { Link } from "react-router";
 
 export function Modal() {
   return createPortal(
@@ -16,9 +17,9 @@ export function Modal() {
             uppercase font-public-sans text-xs tracking-widest
             ">
 
-            <li>Home</li>
-            <li>Portfolio</li>
-            <li>Contact Me</li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/portfolio">Portfolio</Link></li>
+            <li><Link to="/contact">Contact Me</Link></li>
           </ul>
         </dialog>
       </div>

@@ -1,5 +1,6 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import RootLayout from './Layouts/RootLayout'
+import ContactLayout from './Layouts/ContactLayout'
 import LandingPage from './pages/LandingPage'
 import Loading from './components/Loading/Loading'
 
@@ -16,6 +17,17 @@ const router = createBrowserRouter(
         {
           path: '/portfolio',
           lazy: () => import('./pages/PortfolioPage.jsx'),
+          HydrateFallback: Loading
+        }
+      ]
+    },
+    {
+      path: '/contact',
+      element: <ContactLayout />,
+      children: [
+        {
+          index: true,
+          lazy: () => import('./pages/ContactPage.jsx'),
           HydrateFallback: Loading
         }
       ]

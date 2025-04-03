@@ -1,16 +1,17 @@
 import Button from '../Button/Button'
 
-export default function Contact() {
+export default function Contact () {
   return (
-    <section className="flex flex-col gap-8 my-12
+    <section className='flex flex-col gap-8 my-12
         @container
         px-8
         flex
         flex-col
         items-center
         md:flex-row
-      ">
-      <h2 className="font-ibarra font-bold
+      '
+    >
+      <h2 className='font-ibarra font-bold
         text-center md:text-left
         py-8
         text-4xl xl:text-5xl
@@ -18,8 +19,10 @@ export default function Contact() {
         xl:w-2xl
         tracking-normal text-greyish-dark-blue
         md:pt-6
-        ">Interested in doing a project together?</h2>
-      <hr className="
+        '
+      >Interested in doing a project together?
+      </h2>
+      <hr className='
         hidden
         md:flex
         md:w-3xs
@@ -29,9 +32,11 @@ export default function Contact() {
         self-center
         border-greyish-dark-blue/10
         border-y-1
-      " />
-      <Button isPrimary={false} isButton={true}
-        className="uppercase border py-4
+      '
+      />
+      <Button
+        isPrimary={false} isButton
+        className='uppercase border py-4
           px-8
           md:px-0
           md:w-[40cqw]
@@ -40,8 +45,9 @@ export default function Contact() {
           text-xs
           xl:text-lg
           font-public-sans
-        "
-      >Contact me</Button>
+        '
+      >Contact me
+      </Button>
     </section>
   )
 }

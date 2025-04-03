@@ -1,5 +1,5 @@
-function NotFoundPage(){
-  return(
+function NotFoundPage () {
+  return (
     <>
       <h1>Ope, nothing here</h1>
     </>

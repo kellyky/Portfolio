@@ -1,22 +1,22 @@
-import { createContext, memo, useState } from 'react';
+import { createContext, memo, useState } from 'react'
 
 const ModalContext = createContext(
   {
     modalState: false,
-    closeModal: () => {},
+    closeModal: () => {}
   }
 )
 
-function ModalContextProviderComponent({children}){
-  const [showModal, setShowModal] = useState(false);
+function ModalContextProviderComponent ({ children }) {
+  const [showModal, setShowModal] = useState(false)
 
-  function handleClose(){
+  function handleClose () {
     setShowModal(previous => !previous)
   }
 
   const modalContextValues = {
     modalState: showModal,
-    closeModal: handleClose,
+    closeModal: handleClose
   }
 
   return (
@@ -26,5 +26,5 @@ function ModalContextProviderComponent({children}){
   )
 }
 
-export const ModalContextProvider = memo(ModalContextProviderComponent);
-export default ModalContext;
+export const ModalContextProvider = memo(ModalContextProviderComponent)
+export default ModalContext

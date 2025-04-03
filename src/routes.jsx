@@ -7,7 +7,7 @@ const router = createBrowserRouter(
   [
     {
       path: '/',
-      element: <Root/>,
+      element: <Root />,
       children: [
         {
           index: true,
@@ -17,7 +17,7 @@ const router = createBrowserRouter(
           path: '/portfolio',
           lazy: () => import('./pages/PortfolioPage.jsx'),
           HydrateFallback: Loading
-        },
+        }
       ]
     },
     {
@@ -28,6 +28,6 @@ const router = createBrowserRouter(
   ]
 )
 
-export default function Routes() {
-  return <RouterProvider router={router} />;
+export default function Routes () {
+  return <RouterProvider router={router} />
 }

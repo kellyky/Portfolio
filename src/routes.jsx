@@ -17,7 +17,12 @@ const router = createBrowserRouter(
         {
           path: '/portfolio',
           lazy: () => import('./pages/PortfolioPage.jsx'),
-          HydrateFallback: Loading
+          HydrateFallback: Loading,
+        },
+        {
+          path: '/portfolio/:name',
+          lazy: () => import('./pages/ProjectPage.jsx'),
+          HydrateFallback: Loading,
         }
       ]
     },

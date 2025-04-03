@@ -1,3 +1,4 @@
+import { Link } from 'react-router'
 import { PROJECTS } from '../utils/data-projects'
 import Button from '../components/Button/Button'
 
@@ -29,18 +30,20 @@ function PortfolioPage () {
                 >{project.name}
                 </h2>
                 {project.description}
-                <Button
-                  isPrimary={false}
-                  isButton
-                  className='uppercase border py-4
-                    w-3xs
-                    md:w-11/20 lg:w-1/2 xl:w-xs 2xl:w-sm
-                    text-greyish-dark-blue border-greyish-dark-blue
-                    text-xs
-                    xl:text-lg
-                  '
-                >View Project
-                </Button>
+                <Link to={`/portfolio/${project.name}`}>
+                  <Button
+                    isPrimary={false}
+                    isButton
+                    className='uppercase border py-4
+                      w-3xs
+                      md:w-11/20 lg:w-1/2 xl:w-xs 2xl:w-sm
+                      text-greyish-dark-blue border-greyish-dark-blue
+                      text-xs
+                      xl:text-lg
+                    '
+                  >View Project
+                  </Button>
+                </Link>
               </article>
             </div>
           ))

@@ -5,7 +5,7 @@ import Footer from '../components/Footer/Footer'
 import ScrollToTop from '../components/ScrollToTop/ScrollToTop'
 import { ModalContextProvider } from '../store/modal-context'
 
-export default function Root () {
+export default function RootLayout () {
   return (
     <>
       <ModalContextProvider>

@@ -1,7 +1,9 @@
 function ContactPage () {
   return (
     <>
-      <h1>Heyo, reach out to collab. K thx.</h1>
+      <main className="grow">
+        <h1>Heyo, reach out to collab. K thx.</h1>
+      </main>
     </>
   )
 }

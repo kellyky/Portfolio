@@ -43,7 +43,7 @@ export default function LandingPage () {
             lg:tracking-wide tracking-tighter
             text-greyish-dark-blue md:w-4/5 lg:w-4/5'
           >
-            Hey, I'm Kelly Popko and I am a software developer
+            Hey, I&rsquo;m Kelly Popko and I am a software developer
           </h1>
           <Button
             isButton={false}

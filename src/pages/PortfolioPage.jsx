@@ -4,16 +4,22 @@ import Button from '../components/Button/Button'
 
 function PortfolioPage () {
   return (
-    <main className='size-full grow-1 self-center px-8'>
+    <main className='size-full grow-1 self-center px-8 py-4'>
       <ul>
 
         {
           PROJECTS.map(project => (
             <div
               key={project.id}
-              className='flex flex-col gap-8 mb-8'
+              className='flex flex-col gap-8 mb-8
+              md:flex-row md:my-22 md:first:my-8
+              md:even:flex-row-reverse
+              md:last:my-0
+              '
             >
-              <img src={project.image} />
+              <img src={project.image}
+                className='md:w-1/2'
+              />
               <article
                 className='flex flex-col gap-4
                 py-8

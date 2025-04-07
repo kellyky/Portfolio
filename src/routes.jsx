@@ -3,12 +3,14 @@ import RootLayout from './Layouts/RootLayout'
 import ContactLayout from './Layouts/ContactLayout'
 import LandingPage from './pages/LandingPage'
 import Loading from './components/Loading/Loading'
+import Error from './components/Error/Error'
 
 const router = createBrowserRouter(
   [
     {
       path: '/',
       element: <RootLayout />,
+      errorElement: <Error />,
       children: [
         {
           index: true,

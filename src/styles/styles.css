@@ -1,0 +1,17 @@
+@import url(fonts.css);
+@import url(variables.css);
+@import url(layouts.css);
+@import "tailwindcss";
+
+@theme {
+  --color-muted-cyan: var(--muted-cyan);
+  --color-dark-blue: var(--dark-blue);
+  --color-greyish-dark-blue: var(--greyish-dark-blue);
+  --color-very-light-grey: var(--very-light-grey);
+  --color-light-grey: var(--light-grey);
+  --color-bright-red: var(--bright-red);
+  --font-ibarra: Ibarra-Real-Nova, sans-serif;
+  --font-public-sans: Public-Sans, sans-serif;
+  --tracking-widest: 0.125em;
+}
+

@@ -5,37 +5,50 @@ import Button from '../components/Button/Button'
 function PortfolioPage () {
   return (
     <main className='size-full grow-1 self-center px-8 py-4'>
-      <ul>
+      <ul className='flex flex-col items-center
+        md:gap-20
+        '
+      >
 
         {
           PROJECTS.map(project => (
             <div
               key={project.id}
-              className='flex flex-col gap-8 mb-8
-              md:flex-row md:my-22 md:first:my-8
+              className='flex flex-col gap-8
+              md:flex-row
               md:even:flex-row-reverse
-              md:last:my-0
+              md:last:my-0 md:first:mt-8
+              md:max-w-[689px] md:max-h-[410px] md:gap-12
+              lg:max-w-[1025px] lg:gap-12
               '
             >
-              <img src={project.image}
-                className='md:w-1/2'
+              <img
+                src={project.imageDesktop}
+                srcSet={`${project.image} 340w, ${project.imageDesktop} 540w`}
+                sizes='max-width: 768px) 340px, (max-width: 1024px) 540px'
+                className='md:w-1/2 md:object-contain
+                '
               />
               <article
                 className='flex flex-col gap-4
-                py-8
-                border-y-2 border-greyish-dark-blue/10
+                border-y-2 border-bright-red
                 text-base text-greyish-dark-blue
-                opacity-80 leading-8
+                leading-8
+                py-8
+                md:justify-center
                 lg:tracking-wide lg:text-lg
                 xl:tracking-wide xl:text-xl'
               >
                 <h2 className='font-ibarra font-bold
                   text-4xl xl:text-5xl
                   tracking-normal text-greyish-dark-blue
-                  md:pt-6'
+                  '
                 >{project.name}
                 </h2>
-                {project.description}
+                <p className='
+                  '>
+                  {project.description}
+                </p>
                 <Link to={`/portfolio/${project.name}`}>
                   <Button
                     isPrimary={false}

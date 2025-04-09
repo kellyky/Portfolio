@@ -1,6 +1,6 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import RootLayout from './Layouts/RootLayout'
-import ContactLayout from './Layouts/ContactLayout'
+import RootLayout from './layouts/RootLayout'
+import ContactLayout from './layouts/ContactLayout'
 import LandingPage from './pages/LandingPage'
 import Loading from './components/Loading/Loading'
 import Error from './components/Error/Error'

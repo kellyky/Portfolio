@@ -46,7 +46,8 @@ function PortfolioPage () {
                 >{project.name}
                 </h2>
                 <p className='
-                  '>
+                  text-base/8 font-thin opacity-80 tracking-tight
+                  font-public-sans text-color-greyish-dark-blue'>
                   {project.description}
                 </p>
                 <Link to={`/portfolio/${project.name}`}>

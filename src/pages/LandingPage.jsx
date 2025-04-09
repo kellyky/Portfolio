@@ -8,7 +8,7 @@ export default function LandingPage () {
 
   return (
     <main className={
-      `size-full grow-1 self-center px-8
+      `size-full grow-1 self-center px-8 lg:px-30
       ${modalState ? 'blur-xs overflow-hidden' : ''}`
       }
     >

@@ -4,7 +4,7 @@ import { LinkedIn } from '../../assets/icons/LinkedIn'
 
 export default function Footer () {
   return (
-    <footer className='bottom-0 p-12 md:p-4 gap-8
+    <footer className='bottom-0 p-12 md:p-4 gap-8 lg:px-20
       flex flex-col md:flex-row items-center justify-between
       bg-greyish-dark-blue text-very-light-grey'
     >

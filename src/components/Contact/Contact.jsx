@@ -9,6 +9,7 @@ export default function Contact () {
         flex-col
         items-center
         md:flex-row
+        lg:px-30
       '
     >
       <h2 className='font-ibarra font-bold

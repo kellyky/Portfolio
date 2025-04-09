@@ -10,7 +10,7 @@ export default function Header () {
 
   return (
     <header className='sticky top-0 z-3 flex justify-between items-center
-      p-8 md:py-8 lg:py-8 bg-very-light-grey'
+      p-8 md:py-8 lg:py-8 bg-very-light-grey lg:px-30'
     >
       <div>
         <Logo />

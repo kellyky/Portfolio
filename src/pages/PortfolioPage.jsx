@@ -33,7 +33,7 @@ function PortfolioPage () {
               />
               <article
                 className='flex flex-col gap-4
-                border-y-2 border-bright-red
+                border-y-2 border-greyish-dark-blue/15
                 text-base text-greyish-dark-blue
                 leading-8
                 py-8

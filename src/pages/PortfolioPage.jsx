@@ -4,7 +4,9 @@ import Button from '../components/Button/Button'
 
 function PortfolioPage () {
   return (
-    <main className='size-full grow-1 self-center px-8 py-4'>
+    <main className='size-full grow-1 self-center px-8 py-4
+      lg:px-30
+      '>
       <ul className='flex flex-col items-center
         md:gap-20
         '
@@ -36,6 +38,7 @@ function PortfolioPage () {
                 leading-8
                 py-8
                 md:justify-center
+                lg:mx-10
                 lg:tracking-wide lg:text-lg
                 xl:tracking-wide xl:text-xl'
               >

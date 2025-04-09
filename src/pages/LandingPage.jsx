@@ -105,6 +105,7 @@ export default function LandingPage () {
           </h2>
           <article className='
             text-base text-greyish-dark-blue opacity-80 leading-8
+            lg:mx-20
             lg:tracking-wide lg:text-lg
             xl:tracking-wide xl:text-xl
           '

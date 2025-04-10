@@ -1,3 +1,4 @@
+import { Link } from 'react-router'
 import { Logo } from '../../assets/icons/Logo'
 import Social from '../Social/Social'
 
@@ -12,9 +13,9 @@ export default function Footer () {
           md:flex-row items-center'
         >
           <li><Logo fill='var(--very-light-grey)' /></li>
-          <li>Home</li>
-          <li>Portfolio</li>
-          <li>Contact Me</li>
+          <li><Link to='/'>Home</Link></li>
+          <li><Link to='/portfolio'>Portfolio</Link></li>
+          <li><Link to='/contact'>Contact Me</Link></li>
         </ul>
       </nav>
       <Social color='fill-very-light-grey' />

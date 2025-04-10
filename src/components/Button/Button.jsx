@@ -5,7 +5,11 @@ export default function Button ({ children, isButton, isPrimary, ...args }) {
   return (
     <Tag {...args}>
       {isPrimary && <Arrows />}
-      <div className='flex grow-1 tracking-widest items-center justify-center'>
+      <div className='
+        flex grow-1 py-4 tracking-widest items-center justify-center
+        w-[200px] h-[48-px]
+        text-xs font-public-sans uppercase
+        '>
         {children}
       </div>
     </Tag>

@@ -37,16 +37,8 @@ export default function Contact () {
       />
       <Button
         isPrimary={false} isButton
-        className='uppercase border py-4
-          px-8
-          md:px-0
-          md:w-[40cqw]
-          lg:w-[30cqw]
-          text-greyish-dark-blue border-greyish-dark-blue
-          text-xs
-          xl:text-lg
-          font-public-sans
-        '
+        className='border border-greyish-dark-blue
+          text-greyish-dark-blue'
       >Contact me
       </Button>
     </section>

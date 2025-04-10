@@ -57,13 +57,9 @@ export default function About () {
             <Button
               isPrimary={false}
               isButton
-              className='uppercase border py-4
-                w-3xs
-                md:w-11/20 lg:w-1/2 xl:w-xs 2xl:w-sm
-                text-greyish-dark-blue border-greyish-dark-blue
-                text-xs
-                xl:text-lg
-              '
+              className='border
+                border-greyish-dark-blue
+                text-greyish-dark-blue'
             >Go to Portfolio
             </Button>
           </Link>

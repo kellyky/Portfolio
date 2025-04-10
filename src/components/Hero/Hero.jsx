@@ -42,9 +42,8 @@ export default function Hero () {
           className='inline-flex group
           transition-all delay-300 duration-150 ease-in-out
           cursor-pointer hover:bg-muted-cyan hover:text-white
-          sm:max-w-xs max-w-3xs md:w-2/5 lg:h-1/8 lg:w-1/2
-          bg-dark-blue items-center font-public-sans
-          text-light-grey uppercase md:absolute md:bottom-0'
+          bg-dark-blue text-light-grey
+          uppercase md:absolute md:bottom-0'
         >
           About Me
         </Button>

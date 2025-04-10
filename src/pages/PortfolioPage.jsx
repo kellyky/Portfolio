@@ -57,12 +57,8 @@ function PortfolioPage () {
                   <Button
                     isPrimary={false}
                     isButton
-                    className='uppercase border py-4
-                      w-3xs
-                      md:w-11/20 lg:w-1/2 xl:w-xs 2xl:w-sm
+                    className='uppercase border
                       text-greyish-dark-blue border-greyish-dark-blue
-                      text-xs
-                      xl:text-lg
                     '
                   >View Project
                   </Button>

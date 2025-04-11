@@ -21,13 +21,13 @@ export default function ContactIntro () {
             lg:flex-col lg:max-w-6/10
               '
           >
-            <p className='font-public-sans text-color-greyish-dark-blue'>
+            <p className='font-public-sans text-greyish-dark-blue'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium. Voluptatem sequi nesciunt, neque porro quisquam est qui dolorem ipsum quia dolor sit amet. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit. Nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur?
             </p>
+            <Social color="fill-greyish-dark-blue" />
           </div>
 
         </article>
-        <Social />
       </section>
     </>
   )

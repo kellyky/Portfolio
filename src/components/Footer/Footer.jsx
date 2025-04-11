@@ -17,7 +17,7 @@ export default function Footer () {
           <li>Contact Me</li>
         </ul>
       </nav>
-      <Social />
+      <Social color='fill-very-light-grey' />
     </footer>
   )
 }

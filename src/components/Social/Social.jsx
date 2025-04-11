@@ -1,9 +1,9 @@
 import { GitHub } from '../../assets/icons/GitHub'
 import { LinkedIn } from '../../assets/icons/LinkedIn'
 
-export default function Social () {
+export default function Social ({color}) {
   return (
-      <ul className='flex px-10 gap-5 items-center justify-around'>
+      <ul className='flex gap-5 items-center justify-start'>
         <li>
           <a
             href='https://github.com/kellyky/'
@@ -11,8 +11,8 @@ export default function Social () {
             aria-label="Kelly's GitHub profile" rel='noreferrer'
           >
             <GitHub
-              className='hover:fill-muted-cyan transition-colors
-              delay-150 duration-300'
+              className={`hover:fill-muted-cyan transition-colors ${color}
+              delay-150 duration-300`}
             />
           </a>
         </li>
@@ -23,8 +23,8 @@ export default function Social () {
             aria-label="Kelly's LinkedIn profile" rel='noreferrer'
           >
             <LinkedIn
-              className='hover:fill-muted-cyan transition-colors
-            delay-150 duration-300'
+              className={`hover:fill-muted-cyan transition-colors ${color}
+              delay-150 duration-300`}
             />
           </a>
         </li>

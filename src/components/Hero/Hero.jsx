@@ -26,12 +26,15 @@ export default function Hero () {
       </picture>
       <div className='relative flex flex-col gap-4 bg-very-light-grey
         md:justify-center md:absolute md:bottom-0 md:w-3/4
-        md:h-278/600 lg:w-2/5 lg:h-3/5'
+        md:h-278/600
+        lg:w-2/5 lg:h-3/5'
       >
         <h1 className='font-ibarra font-bold
           text-4xl md:text-5xl lg:text-4xl xl:text-6xl
           lg:tracking-wide tracking-tighter
-          text-greyish-dark-blue md:w-4/5 lg:w-4/5'
+          text-greyish-dark-blue w-9/10
+          grow md:flex md:items-center
+          '
         >
           Hey, I&rsquo;m Kelly Popko and I am a software developer
         </h1>
@@ -43,7 +46,7 @@ export default function Hero () {
           transition-all delay-300 duration-150 ease-in-out
           cursor-pointer hover:bg-muted-cyan hover:text-white
           bg-dark-blue text-light-grey
-          uppercase md:absolute md:bottom-0'
+          uppercase w-52 md:bottom-0'
         >
           About Me
         </Button>

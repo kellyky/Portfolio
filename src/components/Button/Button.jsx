@@ -7,7 +7,7 @@ export default function Button ({ children, isButton, isPrimary, ...args }) {
       {isPrimary && <Arrows />}
       <div className='
         flex grow-1 py-4 tracking-widest items-center justify-center
-        w-[200px] h-[48-px]
+        w-52 h-full
         text-xs font-public-sans uppercase
         '>
         {children}

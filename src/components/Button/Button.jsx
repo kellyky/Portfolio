@@ -1,17 +1,19 @@
-import Arrows from '../../assets/icons/Arrows'
+import { Link } from 'react-router'
 
-export default function Button ({ children, isButton, isPrimary, ...args }) {
-  const Tag = isButton ? 'button' : 'a'
-  return (
-    <Tag {...args}>
-      {isPrimary && <Arrows />}
-      <div className='
-        flex grow-1 py-4 tracking-widest items-center justify-center
-        w-52 h-full
-        text-xs font-public-sans uppercase
+export default function Button ({ children, isButton, ...args }) {
+  const button = <button {...args}>{children}</button>
+  const link = <Link {...args}
+        className='w-52 p-4 flex justify-center
+        border border-greyish-dark-blue text-greyish-dark-blue
+        uppercase font-public-sans text-xs tracking-widest
         '>
-        {children}
-      </div>
-    </Tag>
+          {children}
+      </Link>
+
+  return (
+    <>
+      {isButton ? button : link}
+    </>
   )
 }
+

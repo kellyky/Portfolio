@@ -36,9 +36,8 @@ export default function Contact () {
       '
       />
       <Button
-        isPrimary={false} isButton
-        className='border border-greyish-dark-blue
-          text-greyish-dark-blue'
+        isButton={false}
+        to='/contact'
       >Contact me
       </Button>
     </section>

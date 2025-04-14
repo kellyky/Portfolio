@@ -1,4 +1,6 @@
+import { Link } from 'react-router'
 import Button from '../Button/Button'
+import Arrows from '../../assets/icons/Arrows'
 
 export default function Hero () {
   return (
@@ -26,7 +28,7 @@ export default function Hero () {
       </picture>
       <div className='relative flex flex-col gap-4 bg-very-light-grey
         md:justify-center md:absolute md:bottom-0 md:w-3/4
-        md:h-278/600
+        md:h-9/20
         lg:w-2/5 lg:h-3/5'
       >
         <h1 className='font-ibarra font-bold
@@ -38,18 +40,20 @@ export default function Hero () {
         >
           Hey, I&rsquo;m Kelly Popko and I am a software developer
         </h1>
-        <Button
+        <a
           isButton={false}
-          isPrimary
           href='#about-me'
-          className='inline-flex group
+          className='w-52 flex items-center
           transition-all delay-300 duration-150 ease-in-out
           cursor-pointer hover:bg-muted-cyan hover:text-white
           bg-dark-blue text-light-grey
-          uppercase w-52 md:bottom-0'
+          uppercase md:bottom-0'
         >
-          About Me
-        </Button>
+          <Arrows className='' />
+          <span className='flex grow justify-center'>
+            About Me
+          </span>
+        </a>
       </div>
     </section>
   )

@@ -53,16 +53,11 @@ function PortfolioPage () {
                   font-public-sans text-color-greyish-dark-blue'>
                   {project.description}
                 </p>
-                <Link to={`/portfolio/${project.name}`}>
                   <Button
-                    isPrimary={false}
-                    isButton
-                    className='uppercase border
-                      text-greyish-dark-blue border-greyish-dark-blue
-                    '
+                    to={`/portfolio/${project.name}`}
+                    isButton={false}
                   >View Project
-                  </Button>
-                </Link>
+                </Button>
               </article>
             </div>
           ))

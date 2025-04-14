@@ -6,7 +6,6 @@ export default function About () {
       <section
         className='flex flex-col gap-8
         md:flex-row md:justify-center md:gap-14
-        lg:flex-row
         '
       >
         <picture>
@@ -55,16 +54,11 @@ export default function About () {
             >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel ligula id odio scelerisque aliquet. Integer non nisi vitae justo efficitur sagittis. Vivamus dictum, odio non vehicula gravida, nunc arcu laoreet metus, vel ultricies odio justo nec odio. Praesent sit amet feugiat enim. Duis aliquam, erat eget gravida vehicula, ligula elit blandit eros, nec vehicula purus odio ac libero. Integer auctor elit nec erat pharetra feugiat.
             </p>
           </article>
-          <Link to='/portfolio'>
             <Button
-              isPrimary={false}
-              isButton
-              className='border
-                border-greyish-dark-blue
-                text-greyish-dark-blue'
+              isButton={false}
+              to='/portfolio'
             >Go to Portfolio
             </Button>
-          </Link>
         </div>
       </section>
   )

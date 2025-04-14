@@ -4,7 +4,6 @@ import { Link } from 'react-router'
 export default function About () {
   return (
       <section
-        id='about-me'
         className='flex flex-col gap-8
         md:flex-row md:justify-center md:gap-14
         lg:flex-row
@@ -39,7 +38,9 @@ export default function About () {
           font-public-sans
           '
         >
-          <article className='flex flex-col gap-4
+          <article
+            id='about-me'
+            className='flex flex-col gap-4
             text-greyish-dark-blue'>
             <h2 className='font-ibarra font-bold
               text-4xl xl:text-5xl

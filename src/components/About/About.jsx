@@ -5,7 +5,7 @@ export default function About () {
   return (
       <section
         id='about-me'
-        className='flex flex-col gap-8 my-16
+        className='flex flex-col gap-8
         md:flex-row md:justify-center md:gap-14
         lg:flex-row
         '
@@ -39,19 +39,20 @@ export default function About () {
           font-public-sans
           '
         >
-          <h2 className='font-ibarra font-bold
-            text-4xl xl:text-5xl
-            tracking-normal text-greyish-dark-blue
-            md:pt-6
-          '
-          >About Me
-          </h2>
-          <article className='
-            text-base text-greyish-dark-blue opacity-80 leading-8
-            lg:tracking-wide lg:text-lg
-            xl:tracking-wide xl:text-xl
-          '
-          >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel ligula id odio scelerisque aliquet. Integer non nisi vitae justo efficitur sagittis. Vivamus dictum, odio non vehicula gravida, nunc arcu laoreet metus, vel ultricies odio justo nec odio. Praesent sit amet feugiat enim. Duis aliquam, erat eget gravida vehicula, ligula elit blandit eros, nec vehicula purus odio ac libero. Integer auctor elit nec erat pharetra feugiat.
+          <article className='flex flex-col gap-4
+            text-greyish-dark-blue'>
+            <h2 className='font-ibarra font-bold
+              text-4xl xl:text-5xl
+              tracking-tight
+              md:pt-6
+            '
+            >About Me
+            </h2>
+            <p className='text-base/8 font-thin opacity-80
+              tracking-tight font-public-sans
+              '
+            >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel ligula id odio scelerisque aliquet. Integer non nisi vitae justo efficitur sagittis. Vivamus dictum, odio non vehicula gravida, nunc arcu laoreet metus, vel ultricies odio justo nec odio. Praesent sit amet feugiat enim. Duis aliquam, erat eget gravida vehicula, ligula elit blandit eros, nec vehicula purus odio ac libero. Integer auctor elit nec erat pharetra feugiat.
+            </p>
           </article>
           <Link to='/portfolio'>
             <Button

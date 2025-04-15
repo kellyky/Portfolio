@@ -41,7 +41,6 @@ export default function Hero () {
           Hey, I&rsquo;m Kelly Popko and I am a software developer
         </h1>
         <a
-          isButton={false}
           href='#about-me'
           className='w-52 flex items-center
           transition-all delay-300 duration-150 ease-in-out

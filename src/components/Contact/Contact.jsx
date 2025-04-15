@@ -2,14 +2,12 @@ import Button from '../Button/Button'
 
 export default function Contact () {
   return (
-    <section className='flex flex-col gap-8 my-12
+    <section className='flex flex-col mb-12
         @container
-        px-8
         flex
         flex-col
         items-center
         md:flex-row
-        lg:px-30
       '
     >
       <h2 className='font-ibarra font-bold

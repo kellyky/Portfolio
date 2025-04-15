@@ -14,7 +14,7 @@ function PortfolioPage () {
 
         {
           PROJECTS.map(project => (
-            <div
+            <li
               key={project.id}
               className='flex flex-col gap-8
               md:flex-row
@@ -59,7 +59,7 @@ function PortfolioPage () {
                   >View Project
                 </Button>
               </article>
-            </div>
+            </li>
           ))
         }
       </ul>

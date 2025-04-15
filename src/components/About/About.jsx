@@ -8,7 +8,7 @@ export default function About () {
         md:flex-row md:justify-center md:gap-14
         '
       >
-        <picture>
+        <picture className='mx-auto'>
           <source
             media='(min-width:1024px)'
             srcSet='/assets/images/headshot-desktop.webp'

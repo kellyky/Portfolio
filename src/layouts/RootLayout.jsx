@@ -16,7 +16,7 @@ export default function RootLayout () {
       <main className={
         `flex flex-col size-full grow self-center
         gap-8 px-8
-        md:gap-12
+        md:gap-12 md:blur-none
         lg:gap-6 lg:px-30
         ${ modalState ? 'blur-xs overflow-hidden' : '' }
         `

@@ -4,6 +4,7 @@ import ContactLayout from './layouts/ContactLayout'
 import LandingPage from './pages/LandingPage'
 import Loading from './components/Loading/Loading'
 import Error from './components/Error/Error'
+import { action as newContactAction } from './components/ContactForm/ContactForm'
 
 const router = createBrowserRouter(
   [
@@ -31,11 +32,13 @@ const router = createBrowserRouter(
     {
       path: '/contact',
       element: <ContactLayout />,
+      errorElement: <Error />,
       children: [
         {
           index: true,
           lazy: () => import('./pages/ContactPage.jsx'),
-          HydrateFallback: Loading
+          HydrateFallback: Loading,
+          action: newContactAction,
         }
       ]
     },

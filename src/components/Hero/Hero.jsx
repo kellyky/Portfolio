@@ -31,7 +31,9 @@ export default function Hero () {
         md:h-9/20
         lg:w-2/5 lg:h-3/5'
       >
-        <h1 className='font-ibarra font-bold
+        <h1
+          data-cy='headline'
+          className='font-ibarra font-bold
           text-4xl md:text-5xl lg:text-4xl xl:text-6xl
           lg:tracking-wide tracking-tighter
           w-9/10
@@ -42,6 +44,7 @@ export default function Hero () {
         </h1>
         <a
           href='#about-me'
+          data-cy='about-me-link'
           className='w-52 flex items-center
           transition-all delay-300 duration-150 ease-in-out
           cursor-pointer hover:bg-muted-cyan hover:text-white

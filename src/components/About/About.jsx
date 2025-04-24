@@ -4,11 +4,14 @@ import { Link } from 'react-router'
 export default function About () {
   return (
       <section
+        id='about-me'
         className='flex flex-col gap-8
         md:flex-row md:justify-center md:gap-14
         '
       >
-        <picture className='mx-auto'>
+        <picture
+            className='mx-auto'
+        >
           <source
             media='(min-width:1024px)'
             srcSet='/assets/images/headshot-desktop.webp'
@@ -38,10 +41,11 @@ export default function About () {
           '
         >
           <article
-            id='about-me'
             className='flex flex-col gap-4
             '>
-            <h2 className='font-ibarra font-bold
+            <h2
+              data-cy='about-me-h2'
+              className='font-ibarra font-bold
               text-4xl xl:text-5xl
               tracking-tight
               md:pt-6
@@ -55,6 +59,7 @@ export default function About () {
             </p>
           </article>
             <Button
+              data-cy='button-portfolio'
               isButton={false}
               to='/portfolio'
             >Go to Portfolio

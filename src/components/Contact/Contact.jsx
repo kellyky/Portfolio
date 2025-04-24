@@ -34,6 +34,7 @@ export default function Contact () {
       '
       />
       <Button
+        data-cy='button-contact-me'
         isButton={false}
         to='/contact'
       >Contact me

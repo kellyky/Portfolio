@@ -9,6 +9,7 @@ html {
 body {
   position: relative;
   background-color: var(--very-light-grey);
+  color: var(--greyish-dark-blue);
 }
 
 #root {

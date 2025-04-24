@@ -17,7 +17,7 @@ export default function Header () {
       </div>
       <nav>
         <ul className='uppercase hidden md:flex md:gap-12 lg:gap-8
-          text-xs text-greyish-dark-blue tracking-widest font-public-sans
+          text-xs tracking-widest font-public-sans
           '
         >
           <li>

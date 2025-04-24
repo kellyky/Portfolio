@@ -16,7 +16,7 @@ export default function Contact () {
         text-4xl xl:text-5xl
         lg:w-lg
         xl:w-2xl
-        tracking-normal text-greyish-dark-blue
+        tracking-normal
         md:pt-6
         '
       >Interested in doing a project together?

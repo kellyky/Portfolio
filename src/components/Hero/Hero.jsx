@@ -34,7 +34,7 @@ export default function Hero () {
         <h1 className='font-ibarra font-bold
           text-4xl md:text-5xl lg:text-4xl xl:text-6xl
           lg:tracking-wide tracking-tighter
-          text-greyish-dark-blue w-9/10
+          w-9/10
           grow md:flex md:items-center
           '
         >

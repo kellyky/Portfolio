@@ -4,7 +4,7 @@ export default function Button ({ children, isButton, ...args }) {
   const button = <button {...args}>{children}</button>
   const link = <Link {...args}
         className='w-52 p-4 flex justify-center
-        border border-greyish-dark-blue text-greyish-dark-blue
+        border border-greyish-dark-blue
         uppercase font-public-sans text-xs tracking-widest
         '>
           {children}

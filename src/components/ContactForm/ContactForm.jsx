@@ -12,14 +12,14 @@ export default function ContactForm () {
       lg:flex-row lg:px-30 lg:justify-between
       '>
         <h2 className='font-ibarra font-bold text-4xl xl:text-5xl
-          tracking-tight text-greyish-dark-blue
+          tracking-tight
           '
         >Contact Me</h2>
         <Form
           method='post'
           noValidate
           className='flex flex-col gap-4 min-h-[490px]
-          font-public-sans text-color-greyish-dark-blue font-bold
+          font-public-sans font-bold
           lg:justify-baseline lg:min-w-6/10'
         >
           <div className='flex flex-col pb-4'>

@@ -40,7 +40,7 @@ export default function About () {
           <article
             id='about-me'
             className='flex flex-col gap-4
-            text-greyish-dark-blue'>
+            '>
             <h2 className='font-ibarra font-bold
               text-4xl xl:text-5xl
               tracking-tight

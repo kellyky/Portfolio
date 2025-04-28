@@ -5,13 +5,15 @@ import Button from '../components/Button/Button'
 function PortfolioPage () {
   return (
     <>
-      <ul className='flex flex-col items-center
+      <ul
+        data-cy='project-list'
+        className='flex flex-col items-center
         md:gap-20
         '
       >
 
         {
-          PROJECTS.map(project => (
+          PROJECTS.map((project, index) => (
             <li
               key={project.id}
               className='flex flex-col gap-8
@@ -53,6 +55,8 @@ function PortfolioPage () {
                   {project.description}
                 </p>
                   <Button
+                    data-cy='project-link'
+                    // data-cy={`${index}-${project.name}`}
                     to={`/portfolio/${project.name}`}
                     isButton={false}
                   >View Project

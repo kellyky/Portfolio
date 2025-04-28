@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box;
-  color: var(--greyish-dark-blue);
 }
 
 html {
@@ -10,6 +9,7 @@ html {
 body {
   position: relative;
   background-color: var(--very-light-grey);
+  color: var(--greyish-dark-blue);
 }
 
 #root {

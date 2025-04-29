@@ -10,7 +10,12 @@ function ProjectPage () {
   const {name} = useParams()
   const projectData = findProjectByName(name)
   const [pagination, setPagination] = useState(projectData[0].id)
-  console.log(pagination)
+  // console.log(pagination)
+
+  // Styles
+  const divStyle = 'flex grow-2 flex-col gap-4 py-4 my-4'
+  const headingStyle = 'font-ibarra text-4xl tracking-light'
+  const skillsStyle = 'font-public-sans text-muted-cyan text-base/8'
 
   return (
     <>
@@ -18,29 +23,36 @@ function ProjectPage () {
         projectData.map((project) => (
           <section
             key={project.name}
-            className='
-              flex flex-col gap-4
-            '
+            className={`
+                ${divStyle}
+              flex flex-col gap-8
+            `}
           >
             <PreviewImage images={project.projectInfo.hero} />
             <article
-              className='font-public-sans tracking-tight
+              className={`
+                ${divStyle}
+              font-public-sans tracking-tight
               text-base/8 font-thin opacity-80
-              '
+             `}
             >
-              <div className='border-y-2 border-greyish-dark-blue/10'>
+              <div className={`
+                ${divStyle}
+                border-y-2 border-greyish-dark-blue/10
+                `}
+              >
                 <h1
-                  className='font-ibarra font-bold
-                  text-4xl
-                  tracking-tight
-                  '
+                  className={`
+                  ${headingStyle}
+                  font-bold
+                  `}
                 >{project.name}</h1>
                 <p>{project.description}</p>
                 <p
-                  className='font-bold text-muted-cyan'
+                  className={skillsStyle}
                 >{project.projectInfo.concepts}</p>
                 <p
-                  className='font-bold text-muted-cyan'
+                  className={skillsStyle}
                 >{project.projectInfo.languages}</p>
                 <Button
                   isButton={false}
@@ -50,19 +62,16 @@ function ProjectPage () {
               </div>
               <div>
                 <h2
-                  className='font-ibarra
-                  text-4xl
-                  tracking-tight
-                  '
+                  className={headingStyle}
                 >Project Background</h2>
                 <p>{project.projectInfo.background}</p>
               </div>
-              <div>
+              <div className={`
+                ${divStyle}
+                `}
+              >
                 <h2
-                  className='font-ibarra
-                  text-4xl
-                  tracking-tight
-                  '
+                  className={headingStyle}
                 >Static Previews</h2>
                 <PreviewImage images={project.projectInfo.previewOne} />
                 <PreviewImage images={project.projectInfo.previewTwo} />

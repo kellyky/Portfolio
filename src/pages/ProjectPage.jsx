@@ -9,8 +9,6 @@ import Pagination from '../components/Pagination/Pagination'
 function ProjectPage () {
   const {name} = useParams()
   const projectData = findProjectByName(name)
-  const [pagination, setPagination] = useState(projectData[0].id)
-  // console.log(pagination)
 
   // Styles
   const divStyle = 'flex grow-2 flex-col gap-4 py-4 my-4'
@@ -77,7 +75,8 @@ function ProjectPage () {
                 <PreviewImage images={project.projectInfo.previewTwo} />
               </div>
             </article>
-            <Pagination previous='' next='' setPagination={setPagination} />
+            <Pagination
+            />
           </section>
         ))
       }

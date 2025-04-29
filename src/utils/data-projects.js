@@ -8,6 +8,8 @@ export const PROJECTS = [
     projectInfo: {
       languages: 'Ruby / RI / Ruby Doctest / Back End Development',
       concepts: 'Back End Development / Documentation / Command Line Tooling / Ruby Library',
+      link: 'https://git.sr.ht/~kotp/KellysKodingKompendium/tree/master/item/rubylearning/1_week/2c_convert/',
+      background: 'This project was a front-end  challenge from Frontend Mentor. It’s a platform that enables you to practice building websites to a design and project brief. Each challenge includes mobile and desktop designs to show how the website should look at different screen sizes. Creating these projects has helped me refine my workflow and solve real-world coding problems. I’ve learned something new with each project, helping me to improve and adapt my style.',
       hero: [
         '/assets/images/projects/projectPages/projectZero/hero-mobile.png',
         '/assets/images/projects/projectPages/projectZero/hero-tablet.png',
@@ -35,6 +37,8 @@ export const PROJECTS = [
     projectInfo: {
       languages: 'Ruby / RSpec',
       concepts: 'Back End Development / Command Line',
+      link: 'https://github.com/kellyky/mastermind',
+      background: 'This project was a front-end  challenge from Frontend Mentor. It’s a platform that enables you to practice building websites to a design and project brief. Each challenge includes mobile and desktop designs to show how the website should look at different screen sizes. Creating these projects has helped me refine my workflow and solve real-world coding problems. I’ve learned something new with each project, helping me to improve and adapt my style.',
       hero: [
         '/assets/images/projects/projectPages/projectOne/hero-mobile.png',
         '/assets/images/projects/projectPages/projectOne/hero-tablet.png',
@@ -61,6 +65,8 @@ export const PROJECTS = [
     projectInfo: {
       languages: 'Ruby / IO',
       concepts: 'Back End Development / Command Line Game',
+      link: 'https://github.com/kellyky/hangman',
+      background: 'This project was a front-end  challenge from Frontend Mentor. It’s a platform that enables you to practice building websites to a design and project brief. Each challenge includes mobile and desktop designs to show how the website should look at different screen sizes. Creating these projects has helped me refine my workflow and solve real-world coding problems. I’ve learned something new with each project, helping me to improve and adapt my style.',
       hero: [
         '/assets/images/projects/projectPages/projectTwo/hero-mobile.png',
         '/assets/images/projects/projectPages/projectTwo/hero-tablet.png',
@@ -87,6 +93,8 @@ export const PROJECTS = [
     projectInfo: {
       languages: 'Ruby',
       concepts: 'Back End Development',
+      link: 'https://github.com/kellyky',
+      background: 'This project was a front-end  challenge from Frontend Mentor. It’s a platform that enables you to practice building websites to a design and project brief. Each challenge includes mobile and desktop designs to show how the website should look at different screen sizes. Creating these projects has helped me refine my workflow and solve real-world coding problems. I’ve learned something new with each project, helping me to improve and adapt my style.',
       hero: [
         '/assets/images/projects/projectPages/projectThree/hero-mobile.png',
         '/assets/images/projects/projectPages/projectThree/hero-tablet.png',

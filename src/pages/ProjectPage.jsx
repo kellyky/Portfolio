@@ -1,13 +1,16 @@
+import { useState } from  'react'
 import { useParams } from 'react-router'
 import Button from '../components/Button/Button'
 import { findProjectByName } from '../utils/findProjectByName'
 import PreviewImage from '../components/PreviewImage/PreviewImage.jsx'
 import { PROJECTS } from '../utils/data-projects'
+import Pagination from '../components/Pagination/Pagination'
 
 function ProjectPage () {
   const {name} = useParams()
   const projectData = findProjectByName(name)
-  // console.log(projectData[0].projectInfo.hero[0])
+  const [pagination, setPagination] = useState(projectData[0].id)
+  console.log(pagination)
 
   return (
     <>

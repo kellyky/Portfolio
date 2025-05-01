@@ -10,26 +10,26 @@ export default function Contact () {
         md:flex-row
       '
     >
-      <h2 className='font-bold
-        text-center md:text-left
+      <h2 className='
         py-8
-        text-4xl xl:text-5xl
-        lg:w-lg
-        xl:w-2xl
+        text-4xl font-bold text-center
+        md:text-left
         md:pt-6
+        md:max-w-1/2
+        lg:w-lg
+        xl:text-5xl
+        xl:w-2xl
         '
       >Interested in doing a project together?
       </h2>
       <hr className='
-        hidden
+        hidden self-center
+        border-y-1 border-greyish-dark-blue/10
         md:flex
-        md:w-3xs
+        md:w-sm
+        md:mx-6
         lg:w-2xl
         2xl:w-5xl
-        lg:mx-auto
-        self-center
-        border-greyish-dark-blue/10
-        border-y-1
       '
       />
       <Button

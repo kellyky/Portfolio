@@ -32,3 +32,9 @@ h1, h2 {
 p {
   opacity: 80%;
 }
+
+/* Portfolio images 'shrink' in Firefox, Zen browsers */
+img {
+  flex-shrink: 0;
+}
+

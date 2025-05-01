@@ -7,13 +7,13 @@ import { PROJECTS } from '../utils/data-projects'
 import Pagination from '../components/Pagination/Pagination'
 
 function ProjectPage () {
-  const {name} = useParams()
-  const projectData = findProjectByName(name)
+  const {name}       = useParams()
+  const projectData  = findProjectByName(name)
 
   // Styles
-  const divStyle = 'flex grow-2 flex-col gap-4 py-4 my-4'
+  const divStyle     = 'flex flex-col gap-4 py-4 my-4'
   const headingStyle = 'font-ibarra text-4xl tracking-light'
-  const skillsStyle = 'font-public-sans text-muted-cyan text-base/8'
+  const skillsStyle  = `font-public-sans font-bold text-muted-cyan`
 
   return (
     <>
@@ -21,47 +21,52 @@ function ProjectPage () {
         projectData.map((project) => (
           <section
             key={project.name}
-            className={`
-                ${divStyle}
-              flex flex-col gap-8
+            className={`${divStyle}
+              flex flex-col
+              font-public-sans tracking-tight
+              text-base/8 font-thin
             `}
           >
             <PreviewImage images={project.projectInfo.hero} />
             <article
               className={`
                 ${divStyle}
-              font-public-sans tracking-tight
-              text-base/8 font-thin opacity-80
              `}
             >
-              <div className={`
-                ${divStyle}
+              <div className={`${divStyle}
                 border-y-2 border-greyish-dark-blue/10
+                md:max-h-80 flex-wrap
                 `}
               >
                 <h1
-                  className={`
-                  ${headingStyle}
-                  font-bold
+                  className={`${headingStyle}
+                    font-bold order-first
                   `}
                 >{project.name}</h1>
-                <p>{project.description}</p>
                 <p
-                  className={skillsStyle}
-                >{project.projectInfo.concepts}</p>
-                <p
-                  className={skillsStyle}
-                >{project.projectInfo.languages}</p>
+                  className='
+                    order-second
+                    md:order-last
+                    md:w-1/2
+                  '
+                >{project.description}</p>
+                <p className={`${skillsStyle} order-third`}>
+                  {project.projectInfo.concepts}
+                </p>
+                <p className={`${skillsStyle} order-fourth `}>
+                  {project.projectInfo.languages}
+                </p>
                 <Button
                   isButton={false}
                   to={project.projectInfo.link}
+                  className='order-last'
                 >Visit Website
                 </Button>
               </div>
               <div>
-                <h2
-                  className={headingStyle}
-                >Project Background</h2>
+                <h2 className={headingStyle}>
+                  Project Background
+                </h2>
                 <p>{project.projectInfo.background}</p>
               </div>
               <div className={`
@@ -71,8 +76,10 @@ function ProjectPage () {
                 <h2
                   className={headingStyle}
                 >Static Previews</h2>
-                <PreviewImage images={project.projectInfo.previewOne} />
-                <PreviewImage images={project.projectInfo.previewTwo} />
+                <div className='flex flex-col gap-8 mx-auto'>
+                  <PreviewImage images={project.projectInfo.previewOne} />
+                  <PreviewImage images={project.projectInfo.previewTwo} />
+                </div>
               </div>
             </article>
             <Pagination

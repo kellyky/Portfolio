@@ -13,7 +13,7 @@ function ProjectPage () {
   // Styles
   const divStyle     = 'flex flex-col gap-4 py-4 my-4'
   const headingStyle = 'font-ibarra text-4xl tracking-light'
-  const skillsStyle  = `font-public-sans font-bold text-muted-cyan`
+  const skillsStyle  = `font-public-sans font-bold text-muted-cyan md:w-1/2`
 
   return (
     <>
@@ -52,8 +52,7 @@ function ProjectPage () {
                 >{project.description}</p>
                 <p className={`${skillsStyle} order-third`}>
                   {project.projectInfo.concepts}
-                </p>
-                <p className={`${skillsStyle} order-fourth `}>
+                  <br />
                   {project.projectInfo.languages}
                 </p>
                 <Button

@@ -26,7 +26,7 @@ body {
 h1, h2 {
   font-family: var(--font-ibarra);
   letter-spacing: -0.02rem;
-  line-height: 2.625rem;
+  line-height: 3rem;
 }
 
 p {

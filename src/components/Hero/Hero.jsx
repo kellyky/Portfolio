@@ -27,12 +27,12 @@ export default function Hero () {
         />
       </picture>
       <div className='relative flex flex-col gap-4 bg-very-light-grey
-        md:justify-center md:absolute md:bottom-0 md:w-3/4
-        md:h-9/20
-        lg:w-2/5 lg:h-3/5'
+        md:justify-center md:absolute md:bottom-0
+        md:w-[32rem] md:h-[17rem]
+        lg:w-[27rem] lg:h-[22rem]'
       >
         <h1 className='font-bold
-          text-4xl md:text-5xl lg:text-4xl xl:text-5xl
+          text-4xl md:text-5xl
           w-9/10
           grow md:flex md:items-center
           '

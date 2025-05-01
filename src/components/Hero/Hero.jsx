@@ -32,8 +32,7 @@ export default function Hero () {
         lg:w-2/5 lg:h-3/5'
       >
         <h1 className='font-bold
-          text-4xl md:text-5xl lg:text-4xl xl:text-6xl
-          lg:tracking-wide tracking-tighter
+          text-4xl md:text-5xl lg:text-4xl xl:text-5xl
           w-9/10
           grow md:flex md:items-center
           '

@@ -11,7 +11,7 @@ export default function ContactIntro () {
           md:flex md:flex-col md:gap-4
           lg:flex lg:flex-row lg:justify-baseline
           '>
-          <h2 className='flex font-ibarra font-bold
+          <h2 className='flex font-bold
             text-4xl xl:text-5xl
             lg:grow
             tracking-normal
@@ -21,7 +21,7 @@ export default function ContactIntro () {
             lg:flex-col lg:max-w-6/10
               '
           >
-            <p className='font-public-sans'>
+            <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium. Voluptatem sequi nesciunt, neque porro quisquam est qui dolorem ipsum quia dolor sit amet. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit. Nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur?
             </p>
             <Social color="fill-greyish-dark-blue" />

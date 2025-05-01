@@ -34,22 +34,19 @@ export default function About () {
           md:w-19/20 md:justify-center md:gap-8 md:w-sm
           lg:mx-auto lg:w-4/10 lg:justify-center
           xl:gap-20
-          font-public-sans
           '
         >
           <article
             id='about-me'
             className='flex flex-col gap-4
             '>
-            <h2 className='font-ibarra font-bold
+            <h2 className='font-bold
               text-4xl xl:text-5xl
-              tracking-tight
               md:pt-6
             '
             >About Me
             </h2>
-            <p className='text-base/8 font-thin opacity-80
-              tracking-tight font-public-sans
+            <p className='font-thin
               '
             >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel ligula id odio scelerisque aliquet. Integer non nisi vitae justo efficitur sagittis. Vivamus dictum, odio non vehicula gravida, nunc arcu laoreet metus, vel ultricies odio justo nec odio. Praesent sit amet feugiat enim. Duis aliquam, erat eget gravida vehicula, ligula elit blandit eros, nec vehicula purus odio ac libero. Integer auctor elit nec erat pharetra feugiat.
             </p>

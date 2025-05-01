@@ -12,10 +12,10 @@ export default function Pagination () {
   ] = usePagination()
 
   // styles
-  const headingStyle = `font-ibarra tracking-light text-dark-greyish-blue
+  const headingStyle = `text-dark-greyish-blue
                         max-[420px]:text-2xl max-[500px]:text-3xl text-4xl`
   const buttonStyle  = `flex flex-col justify-between gap-2 lg:gap-4 py-6`
-  const textStyle    = `font-public-sans opacity-50 text-dark-greyish-blue text-base`
+  const textStyle    = `opacity-50 text-dark-greyish-blue`
 
   return (
     <>

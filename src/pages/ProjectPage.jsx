@@ -12,8 +12,8 @@ function ProjectPage () {
 
   // Styles
   const divStyle     = 'flex flex-col gap-4 py-4 my-4'
-  const headingStyle = 'font-ibarra text-4xl tracking-light'
-  const skillsStyle  = `font-public-sans font-bold text-muted-cyan md:w-1/2`
+  const headingStyle = 'text-4xl tracking-light'
+  const skillsStyle  = `font-bold text-muted-cyan md:w-1/2`
 
   return (
     <>
@@ -23,8 +23,7 @@ function ProjectPage () {
             key={project.name}
             className={`${divStyle}
               flex flex-col
-              font-public-sans tracking-tight
-              text-base/8 font-thin
+              font-thin
             `}
           >
             <PreviewImage images={project.projectInfo.hero} />

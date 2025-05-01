@@ -10,6 +10,11 @@ body {
   position: relative;
   background-color: var(--very-light-grey);
   color: var(--greyish-dark-blue);
+  letter-spacing: -0.025em;
+  font-weight: 100;
+  font-family: var(--font-public-sans);
+  font-size: 1rem;
+  line-height: 2rem;
 }
 
 #root {
@@ -18,3 +23,12 @@ body {
   min-height: 100vh;
 }
 
+h1, h2 {
+  font-family: var(--font-ibarra);
+  letter-spacing: -0.02rem;
+  line-height: 2.625rem;
+}
+
+p {
+  opacity: 80%;
+}

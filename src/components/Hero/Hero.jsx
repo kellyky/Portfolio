@@ -31,7 +31,7 @@ export default function Hero () {
         md:h-9/20
         lg:w-2/5 lg:h-3/5'
       >
-        <h1 className='font-ibarra font-bold
+        <h1 className='font-bold
           text-4xl md:text-5xl lg:text-4xl xl:text-6xl
           lg:tracking-wide tracking-tighter
           w-9/10

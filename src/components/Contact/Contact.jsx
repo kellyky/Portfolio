@@ -10,13 +10,12 @@ export default function Contact () {
         md:flex-row
       '
     >
-      <h2 className='font-ibarra font-bold
+      <h2 className='font-bold
         text-center md:text-left
         py-8
         text-4xl xl:text-5xl
         lg:w-lg
         xl:w-2xl
-        tracking-normal
         md:pt-6
         '
       >Interested in doing a project together?

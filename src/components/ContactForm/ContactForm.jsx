@@ -11,15 +11,13 @@ export default function ContactForm () {
       px-8 w-full
       lg:flex-row lg:px-30 lg:justify-between
       '>
-        <h2 className='font-ibarra font-bold text-4xl xl:text-5xl
-          tracking-tight
-          '
+        <h2 className='font-bold text-4xl xl:text-5xl'
         >Contact Me</h2>
         <Form
           method='post'
           noValidate
           className='flex flex-col gap-4 min-h-[490px]
-          font-public-sans font-bold
+          font-bold
           lg:justify-baseline lg:min-w-6/10'
         >
           <div className='flex flex-col pb-4'>
@@ -27,7 +25,7 @@ export default function ContactForm () {
               htmlFor='name'
               className='pb-2'
             >
-              Name:
+              Name
             </label>
             <input
               type='text'
@@ -49,7 +47,7 @@ export default function ContactForm () {
               htmlFor='email'
               className='pb-2'
             >
-              Email Address:
+              Email Address
             </label>
             <input
               type='email'
@@ -71,7 +69,7 @@ export default function ContactForm () {
               htmlFor='message'
               className='pb-2'
             >
-              Message:
+              Message
             </label>
             <textarea
               name='message'

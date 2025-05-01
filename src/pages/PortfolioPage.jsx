@@ -32,7 +32,6 @@ function PortfolioPage () {
               <article
                 className='flex flex-col gap-4
                 border-y-2 border-greyish-dark-blue/15
-                text-base
                 leading-8
                 py-8
                 md:justify-center
@@ -40,16 +39,13 @@ function PortfolioPage () {
                 lg:tracking-wide lg:text-lg
                 xl:tracking-wide xl:text-xl'
               >
-                <h2 className='font-ibarra font-bold
+                <h2 className='font-bold
                   text-4xl xl:text-5xl
                   tracking-normal
                   '
                 >{project.name}
                 </h2>
-                <p className='
-                  text-base/8 font-thin opacity-80 tracking-tight
-                  font-public-sans
-                '>
+                <p>
                   {project.description}
                 </p>
                   <Button

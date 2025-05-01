@@ -11,7 +11,7 @@ export function Modal () {
         >
           <ul className='
             h-full flex flex-col items-center justify-center px-10 gap-8
-            uppercase font-public-sans text-xs tracking-widest
+            uppercase text-xs tracking-widest
             '
           >
             <li><Link to='/'>Home</Link></li>

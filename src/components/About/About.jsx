@@ -1,5 +1,4 @@
 import Button from '../Button/Button'
-import { Link } from 'react-router'
 
 export default function About () {
   return (

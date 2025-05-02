@@ -1,4 +1,3 @@
-import { Link } from 'react-router'
 import { PROJECTS } from '../utils/data-projects'
 import Button from '../components/Button/Button'
 

@@ -89,8 +89,7 @@ export default function ContactForm () {
           <Button
             type='submit'
             isButton={true}
-            className='
-              flex w-[200px] h-[48px]
+            className='flex w-[200px] h-[48px]
               mb-6 lg:mb-10
               items-center justify-center
               uppercase tracking-wide

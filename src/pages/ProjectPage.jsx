@@ -1,9 +1,7 @@
-import { useState } from  'react'
 import { useParams } from 'react-router'
 import Button from '../components/Button/Button'
 import { findProjectByName } from '../utils/findProjectByName'
 import PreviewImage from '../components/PreviewImage/PreviewImage.jsx'
-import { PROJECTS } from '../utils/data-projects'
 import Pagination from '../components/Pagination/Pagination'
 
 function ProjectPage () {

@@ -1,4 +1,3 @@
-import { use } from 'react'
 import About from '../components/About/About'
 import Hero from '../components/Hero/Hero'
 

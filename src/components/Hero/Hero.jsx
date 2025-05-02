@@ -1,5 +1,3 @@
-import { Link } from 'react-router'
-import Button from '../Button/Button'
 import Arrows from '../../assets/icons/Arrows'
 
 export default function Hero () {

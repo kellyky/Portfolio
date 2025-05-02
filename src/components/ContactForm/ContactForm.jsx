@@ -5,6 +5,7 @@ export default function ContactForm () {
   const validateErrors = useActionData()
   const styleFormInputs = 'p-2 bg-greyish-dark-blue/10 text-greyish-dark-blue/60'
   const styleErrors = 'text-bright-red italic'
+  const styleLabels = 'font-bold opacity-80 pb-2'
 
   return (
     <section className='flex flex-col justify-center gap-8
@@ -17,13 +18,12 @@ export default function ContactForm () {
           method='post'
           noValidate
           className='flex flex-col gap-4 min-h-[490px]
-          font-bold
           lg:justify-baseline lg:min-w-6/10'
         >
           <div className='flex flex-col pb-4'>
             <label
               htmlFor='name'
-              className='pb-2'
+              className={styleLabels}
             >
               Name
             </label>
@@ -45,7 +45,7 @@ export default function ContactForm () {
           <div className='flex flex-col pb-4'>
             <label
               htmlFor='email'
-              className='pb-2'
+              className={styleLabels}
             >
               Email Address
             </label>
@@ -67,7 +67,7 @@ export default function ContactForm () {
           <div className='flex flex-col pb-4'>
             <label
               htmlFor='message'
-              className='pb-2'
+              className={styleLabels}
             >
               Message
             </label>
@@ -89,10 +89,13 @@ export default function ContactForm () {
           <Button
             type='submit'
             isButton={true}
-            className='flex w-[200px] h-[48px]
-            items-center justify-center
-            uppercase tracking-wide
-            bg-dark-blue text-white'
+            className='
+              flex w-[200px] h-[48px]
+              mb-6 lg:mb-10
+              items-center justify-center
+              uppercase tracking-wide
+              bg-dark-blue text-white
+            '
           >
             Send Message
           </Button>

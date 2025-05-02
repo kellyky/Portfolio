@@ -6,8 +6,8 @@ export const PROJECTS = [
     image: '/assets/images/projects/portfolioPage/temperature-converter.png',
     imageDesktop: '/assets/images/projects/portfolioPage/temperature-converter-desktop.png',
     projectInfo: {
-      languages: 'Ruby / RI / Ruby Doctest / Back End Development',
-      concepts: 'Back End Development / Documentation / Command Line Tooling / Ruby Library',
+      languages: 'Ruby / Ruby Doctest',
+      concepts: 'Back End Development / Ruby Library',
       link: 'https://git.sr.ht/~kotp/KellysKodingKompendium/tree/master/item/rubylearning/1_week/2c_convert/',
       background: 'This project was a front-end  challenge from Frontend Mentor. It’s a platform that enables you to practice building websites to a design and project brief. Each challenge includes mobile and desktop designs to show how the website should look at different screen sizes. Creating these projects has helped me refine my workflow and solve real-world coding problems. I’ve learned something new with each project, helping me to improve and adapt my style.',
       hero: [
@@ -63,8 +63,8 @@ export const PROJECTS = [
     image: '/assets/images/projects/portfolioPage/hangman.png',
     imageDesktop: '/assets/images/projects/portfolioPage/hangman-desktop.png',
     projectInfo: {
-      languages: 'Ruby / IO',
-      concepts: 'Back End Development / Command Line Game',
+      languages: 'Ruby / yaml',
+      concepts: 'Back End Development / StandardIn, StandardOut ',
       link: 'https://github.com/kellyky/hangman',
       background: 'This project was a front-end  challenge from Frontend Mentor. It’s a platform that enables you to practice building websites to a design and project brief. Each challenge includes mobile and desktop designs to show how the website should look at different screen sizes. Creating these projects has helped me refine my workflow and solve real-world coding problems. I’ve learned something new with each project, helping me to improve and adapt my style.',
       hero: [

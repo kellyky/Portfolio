@@ -1,4 +1,5 @@
 import Arrows from '../../assets/icons/Arrows'
+import { motion } from 'motion/react'
 
 export default function Hero () {
   return (
@@ -24,10 +25,14 @@ export default function Hero () {
           className='w-full'
         />
       </picture>
-      <div className='relative flex flex-col gap-4 bg-very-light-grey
+      <motion.div
+        className='relative flex flex-col gap-4 bg-very-light-grey
         md:justify-center md:absolute md:bottom-0
         md:w-[32rem] md:h-[17rem]
         lg:w-[27rem] lg:h-[22rem]'
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0, duration: 3 }}
+        transition={{ ease: "easeOut", duration: 2 }}
       >
         <h1 className='
           font-bold
@@ -52,7 +57,7 @@ export default function Hero () {
             About Me
           </span>
         </a>
-      </div>
+      </motion.div>
     </section>
   )
 }

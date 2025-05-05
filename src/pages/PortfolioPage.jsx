@@ -1,17 +1,34 @@
+import { useAnimate, useInView } from 'motion/react'
+import { useEffect } from 'react'
 import { PROJECTS } from '../utils/data-projects'
 import Button from '../components/Button/Button'
 
 function PortfolioPage () {
+
   return (
     <>
-      <ul className='flex flex-col items-center
+      <ul
+        className='flex flex-col items-center
         md:gap-20
         '
       >
 
         {
-          PROJECTS.map(project => (
+          PROJECTS.map(project => {
+              const [scope, animate] = useAnimate()
+              const isInView = useInView(scope)
+              useEffect(() => {
+                if (isInView){
+                  animate(scope.current, { opacity: 0.5, delay: 2})
+                }
+              }, [isInView])
+
+
+
+            return (
+
             <li
+              ref={scope}
               key={project.id}
               className='flex flex-col gap-8
               md:flex-row
@@ -54,7 +71,7 @@ function PortfolioPage () {
                 </Button>
               </article>
             </li>
-          ))
+          )})
         }
       </ul>
     </>

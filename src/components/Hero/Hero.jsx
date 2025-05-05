@@ -29,10 +29,12 @@ export default function Hero () {
         md:w-[32rem] md:h-[17rem]
         lg:w-[27rem] lg:h-[22rem]'
       >
-        <h1 className='font-bold
+        <h1 className='
+          font-bold
           text-4xl md:text-5xl
           w-9/10
           grow md:flex md:items-center
+          text-shadow-sm/60
           '
         >
           Hey, I&rsquo;m Kelly Popko and I am a software developer

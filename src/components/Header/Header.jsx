@@ -1,4 +1,5 @@
 import { use } from 'react'
+import { AnimatePresence } from 'motion/react'
 import { NavLink } from 'react-router'
 import { HamburgerMenu } from '../../assets/icons/HamburgerMenu'
 import { Logo } from '../../assets/icons/Logo'
@@ -50,7 +51,10 @@ export default function Header () {
         >
           <HamburgerMenu hide={modalState} />
         </button>
-        {modalState && <Modal />}
+        <AnimatePresence mode='wait'>
+
+          {modalState && <Modal />}
+        </AnimatePresence>
       </div>
     </header>
   )

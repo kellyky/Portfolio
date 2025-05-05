@@ -13,6 +13,6 @@
   --font-ibarra: Ibarra-Real-Nova, sans-serif;
   --font-public-sans: Public-Sans, sans-serif;
   --tracking-widest: 0.125em;
-  --text-shadow-sm: 2px 2px 2px var(--muted-cyan);
+  --text-shadow-sm: 2px 3px 3px var(--dark-blue);
 }
 

@@ -34,7 +34,7 @@ export default function Hero () {
           text-4xl md:text-5xl
           w-9/10
           grow md:flex md:items-center
-          text-shadow-sm/60
+          text-shadow-sm/30
           '
         >
           Hey, I&rsquo;m Kelly Popko and I am a software developer

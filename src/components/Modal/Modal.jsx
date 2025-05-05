@@ -1,15 +1,24 @@
 import { createPortal } from 'react-dom'
 import { Link } from 'react-router'
+import { motion } from 'motion/react'
 
 export function Modal () {
   return createPortal(
     <>
-      <div className='fixed z-10 top-20 right-8 size-50 md:hidden'>
-        <dialog
-          open
-          className='w-50 h-45 bg-greyish-dark-blue text-very-light-grey'
+      <div className='fixed z-10 top-20 right-8 size-50 md:hidden'
+      >
+        <motion.div
+          key='modal'
+          initial={{ width: 0, opacity: 0 }}
+          animate={{ width: '100%', opacity: 1 }}
+          exit={{ width: 0 }}
+          transition={{ ease: 'easeInOut', duration: 0.4 }}
+          className='
+          w-50 h-45
+          bg-greyish-dark-blue text-very-light-grey
+          float-right right-0'
         >
-          <ul className='
+          <motion.ul className='
             h-full flex flex-col items-center justify-center px-10 gap-8
             uppercase text-xs tracking-widest
             '
@@ -18,7 +27,7 @@ export function Modal () {
             <li><Link to='/portfolio'>Portfolio</Link></li>
             <li><Link to='/contact'>Contact Me</Link></li>
           </ul>
-        </dialog>
+        </motion.div>
       </div>
     </>,
     document.body

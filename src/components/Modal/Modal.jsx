@@ -12,11 +12,13 @@ export function Modal () {
           initial={{ width: 0, opacity: 0 }}
           animate={{ width: '100%', opacity: 1 }}
           exit={{ width: 0 }}
-          transition={{ ease: 'easeInOut', duration: 0.4 }}
+          transition={{ ease: 'easeInOut', duration: 3 }}
           className='
           w-50 h-45
           bg-greyish-dark-blue text-very-light-grey
-          float-right right-0'
+          float-right right-0
+
+          '
         >
           <motion.ul
             initial={{
@@ -29,17 +31,20 @@ export function Modal () {
 
             transition={{
               delay: 0.3,
-              duration: 0.5,
               ease: 'easeInOut'
             }}
 
             exit={{
               opacity: 0,
+              duration: 100,
             }}
 
             className='
-            h-full flex flex-col items-center justify-center px-10 gap-8
+
+            h-full
+            flex flex-col items-center justify-center gap-8
             uppercase text-xs tracking-widest
+            overflow-hidden
             '
           >
             <li><Link to='/'>Home</Link></li>

@@ -18,7 +18,26 @@ export function Modal () {
           bg-greyish-dark-blue text-very-light-grey
           float-right right-0'
         >
-          <motion.ul className='
+          <motion.ul
+            initial={{
+              opacity: 0
+            }}
+
+            animate={{
+              opacity: 1
+            }}
+
+            transition={{
+              delay: 0.3,
+              duration: 0.5,
+              ease: 'easeInOut'
+            }}
+
+            exit={{
+              opacity: 0,
+            }}
+
+            className='
             h-full flex flex-col items-center justify-center px-10 gap-8
             uppercase text-xs tracking-widest
             '
@@ -26,7 +45,7 @@ export function Modal () {
             <li><Link to='/'>Home</Link></li>
             <li><Link to='/portfolio'>Portfolio</Link></li>
             <li><Link to='/contact'>Contact Me</Link></li>
-          </ul>
+          </motion.ul>
         </motion.div>
       </div>
     </>,

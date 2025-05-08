@@ -14,5 +14,6 @@
   --font-public-sans: Public-Sans, sans-serif;
   --tracking-widest: 0.125em;
   --text-shadow-sm: 2px 3px 3px var(--dark-blue);
+  --background-image-not-found-page: url('/assets/images/not-found-page-photos/phoenix.webp');
 }
 

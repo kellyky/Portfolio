@@ -12,7 +12,7 @@ body {
   color: var(--greyish-dark-blue);
   letter-spacing: -0.025em;
   font-weight: 100;
-  font-family: var(--font-public-sans);
+  font-family: var(--font-public-sans), sans-serif;
   font-size: 1rem;
   line-height: 2rem;
 }
@@ -24,7 +24,7 @@ body {
 }
 
 h1, h2 {
-  font-family: "Ibarra-nova";
+  font-family: "Ibarra-nova", sans-serif;
   letter-spacing: -0.02rem;
   line-height: 3rem;
 }

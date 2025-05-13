@@ -14,7 +14,7 @@ export default function Pagination () {
   // styles
   const headingStyle = `text-dark-greyish-blue
                         max-[420px]:text-2xl max-[500px]:text-3xl text-4xl`
-  const buttonStyle  = `flex flex-col justify-between gap-2 lg:gap-4 py-6`
+  const buttonStyle  = `flex flex-col justify-between gap-2 py-4`
   const textStyle    = `opacity-50 text-dark-greyish-blue`
 
   return (

@@ -1,7 +1,8 @@
-export default function PreviewImage ({images}) {
+export default function PreviewImage (args) {
+  const {images, className} = args
   return (
     <>
-      <picture className='flex flex-col mx-auto w-full'>
+      <picture className={className}>
         <source
           srcSet={images[2]}
           media='(min-width:1024px)'

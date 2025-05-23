@@ -37,9 +37,11 @@ function ProjectPage () {
                   gap-4 py-4 my-4
                   border-y-2 border-greyish-dark-blue/10
                   flex flex-wrap
-                  lg:py-8 lg:gap-4
+                  lg:py-8 lg:gap-6
                   md:grid md:grid-cols-2
                   md:grid-rows-3
+                  lg:grid-cols-1
+                  lg:grid-rows-1
                   '
                 >
                   <h1

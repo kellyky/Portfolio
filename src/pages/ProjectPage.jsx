@@ -9,9 +9,8 @@ function ProjectPage () {
   const projectData  = findProjectByName(name)
 
   // Styles
-  const divStyle     = 'flex flex-col gap-4 py-4 my-4'
   const headingStyle = 'text-3xl tracking-light'
-  const skillsStyle  = `font-bold text-muted-cyan md:w-1/2 lg:w-full`
+  const skillsStyle  = `font-bold text-muted-cyan lg:w-full`
 
   return (
     <>
@@ -28,7 +27,7 @@ function ProjectPage () {
           >
             <PreviewImage
               images={project.projectInfo.hero}
-              className='lg:col-span-full'
+              className='lg:col-span-full w-full flex justify-center'
             />
               <div
                 className='lg:col-span-2
@@ -39,16 +38,20 @@ function ProjectPage () {
                   border-y-2 border-greyish-dark-blue/10
                   flex flex-wrap
                   lg:py-8 lg:gap-4
+                  md:grid md:grid-cols-2
+                  md:grid-rows-3
                   '
                 >
                   <h1
                     className={`${headingStyle}
                       text-4xl
                       font-bold
+
                     `}
                   >{project.name}</h1>
                   <p
                     className='
+                      md:row-span-3
                     '
                   >{project.description}</p>
                   <p className={`${skillsStyle} `}>
@@ -59,7 +62,8 @@ function ProjectPage () {
                   <Button
                     isButton={false}
                     to={project.projectInfo.link}
-                    className=''
+                    className='
+                    '
                   >Visit Website
                   </Button>
                 </div>
@@ -77,7 +81,7 @@ function ProjectPage () {
                   <p>{project.projectInfo.background}</p>
                 </div>
                 <div className={`
-                  ${divStyle}
+
                   `}
                 >
                   <h2

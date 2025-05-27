@@ -2,17 +2,17 @@
 
 # 📖 Portfolio <a name="about-project"></a>
 
-A [wip] React and Tailwind project.
+Mobile-first personal portfolio website using React and Tailwind, built from Figma design. (Thank you, Frontend Mentor!)
 
-Once built and fully functional, it will showcase a few projects that highlightg my work.
+**Current Status**: In progress.
+Most pages are built and styled with stock imagery and text.
+TODO: Contact Form functionality, 'Not Found' page.
 
-My current focus is app functionality, working from a Figma design with (mostly) stock images and text).
-Once a working skeleton is in-place, I will add my own projects and text.
-
+Once fully built and functional, I will personalize it - replacing stock text and images with my projects and photos.
 
 ## Tech Stack <a name="tech-stack"></a>
 
-- React
+- React + JavaScript
 - Tailwind
 - Figma
 
@@ -20,7 +20,7 @@ Once a working skeleton is in-place, I will add my own projects and text.
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-1. Install `npm` and `nodejs` if you do not have them.
+1. Install `npm` and `nodejs` if not already installed.
 2. Clone repository and navigate to Portfolio.
 
 ```sh

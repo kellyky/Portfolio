@@ -1,8 +1,10 @@
 import { Form, redirect, useActionData } from 'react-router-dom'
 import Button from '../Button/Button'
+import FormSuccessModal from '../FormSuccessModal/FormSuccessModal'
 
 export default function ContactForm () {
-  const validateErrors = useActionData()
+  const actionData = useActionData()
+
   const styleFormInputs = 'p-2 bg-greyish-dark-blue/10 text-greyish-dark-blue/60'
   const styleErrors = 'text-bright-red italic'
   const styleLabels = 'font-bold opacity-80 pb-2'
@@ -12,6 +14,7 @@ export default function ContactForm () {
       px-8 w-full
       lg:flex-row lg:px-30 lg:justify-between
       '>
+      { actionData?.success && <FormSuccessModal /> }
         <h2 className='font-bold text-4xl xl:text-5xl'
         >Contact Me</h2>
         <Form
@@ -32,13 +35,13 @@ export default function ContactForm () {
               name='name'
               id='name'
               placeholder='Frodo Baggins'
-              className={`${styleFormInputs} ${ validateErrors?.invalidName ?
+              className={`${styleFormInputs} ${ actionData?.invalidName ?
                   'border border-bright-red' : ''
               }`}
             />
             {
-              validateErrors?.invalidName &&
-                <span className={styleErrors}>{validateErrors.invalidName}</span>
+              actionData?.invalidName &&
+                <span className={styleErrors}>{actionData.invalidName}</span>
             }
           </div>
 
@@ -54,13 +57,13 @@ export default function ContactForm () {
               name='email'
               id='email'
               placeholder='frodo@bag-end.shire'
-              className={`${styleFormInputs} ${ validateErrors?.invalidEmail ?
+              className={`${styleFormInputs} ${ actionData?.invalidEmail ?
                   'border border-bright-red' : ''
               }`}
             />
             {
-              validateErrors?.invalidEmail &&
-                <span className={styleErrors}>{validateErrors.invalidEmail}</span>
+              actionData?.invalidEmail &&
+                <span className={styleErrors}>{actionData.invalidEmail}</span>
             }
           </div>
 
@@ -76,13 +79,13 @@ export default function ContactForm () {
               id='message'
               rows="4"
               placeholder='How can I help?'
-              className={`${styleFormInputs} ${ validateErrors?.invalidMessage ?
+              className={`${styleFormInputs} ${ actionData?.invalidMessage ?
                   'border border-bright-red' : ''
               }`}
             />
             {
-              validateErrors?.invalidMessage &&
-                <span className={styleErrors}>{validateErrors.invalidMessage}</span>
+              actionData?.invalidMessage &&
+                <span className={styleErrors}>{actionData.invalidMessage}</span>
             }
           </div>
 
@@ -110,7 +113,7 @@ export async function action({ request }) {
   const enteredName = formData.get('name')
   const enteredEmail = formData.get('email')
   const enteredMessage = formData.get('message')
-  const regexEmail = /^[a-zA-Z0–9._%+-]+@[a-zA-Z0–9.-]+\.[a-zA-Z]{2,}$/
+  const regexEmail = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
 
   const postData = {
     name: enteredName,
@@ -118,25 +121,39 @@ export async function action({ request }) {
     message: enteredMessage
   }
 
-  let validateErrors = new Object()
+  let actionData = new Object()
 
   if(enteredName.trim().length === 0) {
-    validateErrors.invalidName = 'Please provide a name'
+    actionData.invalidName = 'Please provide a name'
   }
 
-
   if(!regexEmail.test(enteredEmail)) {
-    validateErrors.invalidEmail = 'Please provide a valid email'
+    actionData.invalidEmail = 'Please provide a valid email'
   }
 
   if(enteredMessage.trim().length === 0) {
-    validateErrors.invalidMessage = 'Please provide a message'
+    actionData.invalidMessage = 'Please provide a message'
   }
 
-  if(Object.keys(validateErrors).length >= 1){
-    return validateErrors
+  if(Object.keys(actionData).length >= 1){
+    return actionData
   }
 
-  return redirect('/')
-    // return null
+  try {
+    const response = await fetch(import.meta.env.VITE_FORMSPREE_API, {
+      method: "POST",
+      headers:  {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(postData)
+    })
+
+    if (response.ok) {
+      return { success: true }
+
+    }
+  } catch (error) {
+    console.log("The form did not send")
+    console.log(error)
+  }
 }

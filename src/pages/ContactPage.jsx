@@ -8,6 +8,7 @@ function ContactPage () {
 
   return (
     <main className={`
+      bg-blue-300
       grow flex flex-col
       ${ actionData?.success && 'blur-xs overflow-hidden' }
       `}

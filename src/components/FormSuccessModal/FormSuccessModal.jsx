@@ -52,10 +52,23 @@ export default function FormSuccessModal () {
           items-center
           p-4
           '>
-          <div>
+          <div
+            className='
+            flex flex-col items-center gap-2
+            '
+          >
             <strong>Thanks for reaching out!</strong>
-            <p>I will be in touch soon.</p>
-            <PaperAirplane />
+            <div
+              className='flex items-center gap-2'
+            >
+              <p>I will be in touch soon.</p>
+              <PaperAirplane
+                className='
+                fill-greyish-dark-blue
+                size-6
+                '
+              />
+            </div>
           </div>
           <Button
             className=''

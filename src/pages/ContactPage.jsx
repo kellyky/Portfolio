@@ -4,7 +4,6 @@ import { useActionData } from 'react-router-dom'
 
 function ContactPage () {
   const actionData = useActionData()
-  console.log(actionData)
 
   return (
     <main className={`

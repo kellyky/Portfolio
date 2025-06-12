@@ -30,14 +30,13 @@ export default function FormSuccessModal () {
           w-2/3
           inset-0
           fixed
-          max-w-dvw
-          h-max-dvh
           m-auto
           h-[5rem]
 
           md:flex-row
           md:h-fit
           md:pb-4
+          lg:max-w-2xl
           '
           open
         >
@@ -64,6 +63,8 @@ export default function FormSuccessModal () {
 
             md:flex-col
             md:gap-[1rem]
+            md:h-full
+            md:my-auto
 
             '>
             <div

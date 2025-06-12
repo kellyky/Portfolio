@@ -14,7 +14,7 @@ export default function ContactForm () {
       px-8 w-full
       lg:flex-row lg:px-30 lg:justify-between
       '>
-      { actionData?.success && <FormSuccessModal /> }
+      { <FormSuccessModal /> }
         <h2 className='font-bold text-4xl xl:text-5xl'
         >Contact Me</h2>
         <Form

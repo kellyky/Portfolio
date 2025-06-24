@@ -31,15 +31,24 @@ export default function Pagination () {
           onClick={handlePreviousPage}
           className={`${buttonStyle} items-start lg:justify-start`}
         >
-          <PageLeft />
-          <div className='flex flex-col'>
-            <h2 className={`${headingStyle} text-left`}>
-              {previousProject.name}
-            </h2>
+          <div id="page-left" className='
+            gap-4
+            flex flex-col
+            lg:flex-row
+            lg:items-center
+            lg:cursor-pointer
+            '
+          >
+            <PageLeft />
+            <div className='flex flex-col'>
+              <h2 className={`${headingStyle} text-left`}>
+                {previousProject.name}
+              </h2>
 
-            <span className={`${textStyle} text-left`}>
-              Previous Project
-            </span>
+              <span className={`${textStyle} text-left`}>
+                Previous Project
+              </span>
+            </div>
           </div>
         </Button>
         <Button
@@ -48,14 +57,24 @@ export default function Pagination () {
           className={`${buttonStyle} items-end lg:justify-start lg:flex-row-reverse
           `}
         >
-          <PageRight />
-          <div className='flex flex-col'>
-            <h2 className={`${headingStyle} text-right`} >
-                {nextProject.name}
-            </h2>
-            <span className={`${textStyle} text-right`}>
-              Next Project
-            </span>
+          <div id="page-right" className='
+            gap-4
+            flex flex-col
+            items-end
+            lg:flex-row-reverse
+            lg:items-center
+            lg:cursor-pointer
+            '
+          >
+            <PageRight />
+            <div className='flex flex-col lg:cursor-pointer'>
+              <h2 className={`${headingStyle} text-right`} >
+                  {nextProject.name}
+              </h2>
+              <span className={`${textStyle} text-right`}>
+                Next Project
+              </span>
+            </div>
           </div>
         </Button>
       </section>

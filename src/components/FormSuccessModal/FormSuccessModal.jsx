@@ -32,10 +32,10 @@ export default function FormSuccessModal () {
           fixed
           m-auto
           h-[5rem]
-
+          p-4
+          shadow-lg shadow-dark-blue/60
           md:flex-row
-          md:h-fit
-          md:pb-4
+          h-fit
           lg:max-w-2xl
           '
           open
@@ -44,33 +44,29 @@ export default function FormSuccessModal () {
             src='/assets/images/contact-confirmation/beach_umbrella.webp'
             alt='Black and white sketch of a beach and umbrella'
             className='
-            rounded-tl-lg
-            rounded-tr-lg
 
             md:w-1/2
-            md:h-fit
+            md:h-full
             '
           />
 
           <div className='bg-white
-            rounded-bl-lg
-            rounded-br-lg
             flex
             flex-col
-            justify-between
+            grow
+            gap-4
+            md:gap-0
+            justify-evenly
             items-center
-            p-4
-
+            h-auto
             md:flex-col
             md:gap-[1rem]
-            md:h-full
-            md:my-auto
-
+            md:h-auto
+            lg:p-4
             '>
             <div
               className='
               flex flex-col items-center
-              
               '
             >
               <h3

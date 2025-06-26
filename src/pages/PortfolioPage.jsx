@@ -2,6 +2,7 @@ import { useAnimate, useInView } from 'motion/react'
 import { useEffect } from 'react'
 import { PROJECTS } from '../utils/data-projects'
 import Button from '../components/Button/Button'
+import Contact from '../components/Contact/Contact'
 
 function PortfolioPage () {
 
@@ -74,6 +75,7 @@ function PortfolioPage () {
           )})
         }
       </ul>
+      <Contact />
     </>
   )
 }

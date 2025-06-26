@@ -3,6 +3,7 @@ import Button from '../components/Button/Button'
 import { findProjectByName } from '../utils/findProjectByName'
 import PreviewImage from '../components/PreviewImage/PreviewImage.jsx'
 import Pagination from '../components/Pagination/Pagination'
+import Contact from '../components/Contact/Contact'
 
 function ProjectPage () {
   const {name}       = useParams()
@@ -99,6 +100,7 @@ function ProjectPage () {
         ))
       }
       <Pagination />
+      <Contact />
     </>
   )
 }

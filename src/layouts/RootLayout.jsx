@@ -23,7 +23,6 @@ export default function RootLayout () {
         }
       >
         <Outlet />
-        <Contact />
       </main>
       <Footer />
     </>

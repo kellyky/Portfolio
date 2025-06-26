@@ -12,7 +12,7 @@ export function Modal () {
           initial={{ width: 0, opacity: 0 }}
           animate={{ width: '100%', opacity: 1 }}
           exit={{ width: 0 }}
-          transition={{ ease: 'easeInOut', duration: 3 }}
+          transition={{ ease: 'anticipate', duration: 1 }}
           className='
           w-50 h-45
           bg-greyish-dark-blue text-very-light-grey

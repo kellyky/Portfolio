@@ -1,8 +1,14 @@
 import { createPortal } from 'react-dom'
-import { Link } from 'react-router'
+import { use } from 'react'
+import { Link, useLocation } from 'react-router'
 import { motion } from 'motion/react'
+import ModalContext from '../../store/modal-context'
 
 export function Modal () {
+  const { closeModal } = use(ModalContext)
+  const location = useLocation()
+  console.log('path: ', location.pathname)
+
   return createPortal(
     <>
       <div className='fixed z-10 top-20 right-8 size-50 md:hidden'
@@ -47,9 +53,9 @@ export function Modal () {
             overflow-hidden
             '
           >
-            <li><Link to='/'>Home</Link></li>
-            <li><Link to='/portfolio'>Portfolio</Link></li>
-            <li><Link to='/contact'>Contact Me</Link></li>
+            <li><Link to='/' onClick={closeModal} >Home</Link></li>
+            <li><Link to='/portfolio' onClick={closeModal} >Portfolio</Link></li>
+            <li><Link to='/contact' onClick={closeModal} >Contact Me</Link></li>
           </motion.ul>
         </motion.div>
       </div>

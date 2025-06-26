@@ -51,7 +51,8 @@ export default function Header () {
         >
           <HamburgerMenu hide={modalState} />
         </button>
-        <AnimatePresence>
+        <AnimatePresence mode='wait'>
+
           {modalState && <Modal />}
         </AnimatePresence>
       </div>

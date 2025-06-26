@@ -1,5 +1,6 @@
 import { PROJECTS } from '../utils/data-projects'
 import Button from '../components/Button/Button'
+import Contact from '../components/Contact/Contact'
 
 function PortfolioPage () {
   return (
@@ -57,6 +58,7 @@ function PortfolioPage () {
           ))
         }
       </ul>
+      <Contact />
     </>
   )
 }

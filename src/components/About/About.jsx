@@ -1,9 +1,18 @@
-import { motion } from 'motion/react'
+import { useRef, useState, useEffect } from 'react'
+import { motion, useInView } from 'motion/react'
 import { mix, easeInOut } from 'motion/react'
 import Button from '../Button/Button'
 
 export default function About () {
+  const ref = useRef()
+  const isInView = useInView(ref, { once: true })
+  const [hasAnimated, setHasAnimated] = useState(false)
 
+  useEffect (() => {
+    if (isInView) {
+      setHasAnimated(true)
+    }
+  }, [isInView])
 
   return (
       <section
@@ -55,18 +64,13 @@ export default function About () {
         >
           <motion.article
             id='about-me'
+            ref={ref}
             className='flex flex-col gap-4'
             initial={{
               x: 100, opacity: 0
             }}
-
-            whileInView={{
-              x: 0, opacity: 1, duration: 2
-            }}
-
-            transition={{ ease: 'easeOut', duration: 2, 
-
-            }}
+            animate={hasAnimated ? { x: 0, opacity: 1 } : {}}
+            transition={{ ease: 'easeOut', duration: 2 }}
           >
             <h2 className='font-bold
               text-4xl xl:text-5xl

@@ -1,8 +1,20 @@
+import { useState } from 'react'
 import { Form, redirect, useActionData } from 'react-router-dom'
 import Button from '../Button/Button'
 import FormSuccessModal from '../FormSuccessModal/FormSuccessModal'
 
 export default function ContactForm () {
+  const storedContact = JSON.parse(localStorage.getItem('contact') || {})
+
+  const [contact, setContact] = useState(storedContact)
+
+  function handleChange (event) {
+    const { name, value } = event.target
+    setContact(previous => ({...previous, [name]: value }))
+    localStorage.setItem('contact', JSON.stringify(contact))
+  }
+
+
   const actionData = useActionData()
 
   const styleFormInputs = 'p-2 bg-greyish-dark-blue/10 text-greyish-dark-blue/60'
@@ -33,8 +45,10 @@ export default function ContactForm () {
             <input
               type='text'
               name='name'
+              value={contact.name}
               id='name'
-              placeholder='Frodo Baggins'
+              placeholder='Bilbo Baggins'
+              onChange={handleChange}
               className={`${styleFormInputs} ${ actionData?.invalidName ?
                   'border border-bright-red' : ''
               }`}
@@ -55,8 +69,10 @@ export default function ContactForm () {
             <input
               type='email'
               name='email'
+              value={contact.email}
               id='email'
               placeholder='frodo@bag-end.shire'
+              onChange={handleChange}
               className={`${styleFormInputs} ${ actionData?.invalidEmail ?
                   'border border-bright-red' : ''
               }`}
@@ -77,8 +93,10 @@ export default function ContactForm () {
             <textarea
               name='message'
               id='message'
+              value={contact.message}
               rows="4"
               placeholder='How can I help?'
+              onChange={handleChange}
               className={`${styleFormInputs} ${ actionData?.invalidMessage ?
                   'border border-bright-red' : ''
               }`}

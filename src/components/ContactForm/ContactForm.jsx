@@ -4,16 +4,30 @@ import Button from '../Button/Button'
 import FormSuccessModal from '../FormSuccessModal/FormSuccessModal'
 
 export default function ContactForm () {
-  const storedContact = JSON.parse(localStorage.getItem('contact') || {})
-
+  const storedContact = JSON.parse(localStorage.getItem('contact')) || {
+    name: '',
+    email: '',
+    message: ''
+  }
   const [contact, setContact] = useState(storedContact)
 
-  function handleChange (event) {
-    const { name, value } = event.target
-    setContact(previous => ({...previous, [name]: value }))
-    localStorage.setItem('contact', JSON.stringify(contact))
-  }
+  const [submitButton, setSubmitButton] = useState(
+    Object.values(storedContact).every(value => value === '')
+  )
 
+  function handleChange(event) {
+    const { name, value } = event.target
+    const updatedContact = { ...contact, [name]: value }
+
+    setContact(updatedContact)
+    localStorage.setItem('contact', JSON.stringify(updatedContact))
+
+    if (Object.values(updatedContact).every(value => value.length > 0)) {
+      setSubmitButton(false)
+    } else {
+      setSubmitButton(true)
+    }
+  }
 
   const actionData = useActionData()
 
@@ -110,12 +124,15 @@ export default function ContactForm () {
           <Button
             type='submit'
             isButton={true}
-            className='flex w-[200px] h-[48px]
+            disabled={submitButton}
+            className= {`
+              flex w-[200px] h-[48px]
               mb-6 lg:mb-10
               items-center justify-center
               uppercase tracking-wide
               bg-dark-blue text-white
-            '
+              ${ submitButton ? 'bg-grey' : null }
+            `}
           >
             Send Message
           </Button>

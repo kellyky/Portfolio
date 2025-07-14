@@ -31,7 +31,11 @@ export default function ContactForm () {
 
   const actionData = useActionData()
 
-  const styleFormInputs = 'p-2 bg-greyish-dark-blue/10 text-greyish-dark-blue/60'
+  const styleFormInputs = `p-2 bg-greyish-dark-blue/10 text-greyish-dark-blue/60
+                          focus:outline-none
+                          focus:border focus:border-1 focus:border-muted-cyan
+                          hover:border hover:border-1 hover:border-muted-cyan`
+
   const styleErrors = 'text-bright-red italic'
   const styleLabels = 'font-bold opacity-80 pb-2'
 

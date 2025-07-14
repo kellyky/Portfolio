@@ -64,6 +64,7 @@ function ProjectPage () {
                   <Button
                     isButton={false}
                     to={project.projectInfo.link}
+                    target='_blank'
                     className='
                     '
                   >Visit Website

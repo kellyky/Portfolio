@@ -22,7 +22,7 @@ export default function ContactForm () {
     setContact(updatedContact)
     localStorage.setItem('contact', JSON.stringify(updatedContact))
 
-    if (Object.values(updatedContact).every(value => value.length > 0)) {
+    if (Object.values(updatedContact).some(value => value.length !== 0)) {
       setSubmitButton(false)
     } else {
       setSubmitButton(true)

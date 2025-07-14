@@ -44,7 +44,7 @@ function PortfolioPage () {
                   '
                 >{project.name}
                 </h2>
-                <p>
+                <p className='text-base/8'>
                   {project.description}
                 </p>
                   <Button

@@ -15,7 +15,7 @@ export default function Header () {
       <div>
         <Logo />
       </div>
-      <nav>
+      <nav className='invisible md:visible'>
         <ul className='uppercase hidden md:flex md:gap-12 lg:gap-8
           text-xs tracking-widest
           '

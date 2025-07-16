@@ -36,7 +36,6 @@ export default function Pagination () {
             flex flex-col
             lg:flex-row
             lg:items-center
-            lg:cursor-pointer
             '
           >
             <PageLeft />
@@ -63,11 +62,10 @@ export default function Pagination () {
             items-end
             lg:flex-row-reverse
             lg:items-center
-            lg:cursor-pointer
             '
           >
             <PageRight />
-            <div className='flex flex-col lg:cursor-pointer'>
+            <div className='flex flex-col'>
               <h2 className={`${headingStyle} text-right`} >
                   {nextProject.name}
               </h2>

@@ -17,6 +17,10 @@ body {
   line-height: 2rem;
 }
 
+button {
+  cursor: pointer;
+}
+
 #root {
   display: flex;
   flex-direction: column;

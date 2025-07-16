@@ -135,7 +135,6 @@ export default function ContactForm () {
               items-center justify-center
               uppercase tracking-wide
               bg-dark-blue text-white
-              cursor-pointer
               ${ submitButton ? 'bg-grey' : null }
             `}
           >

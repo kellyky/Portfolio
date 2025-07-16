@@ -43,7 +43,7 @@ export default function Hero () {
           href='#about-me'
           className='w-52 flex items-center
           transition-all delay-300 duration-150 ease-in-out
-          cursor-pointer hover:bg-muted-cyan hover:text-white
+          hover:bg-muted-cyan hover:text-white
           bg-dark-blue text-light-grey
           uppercase md:bottom-0'
         >

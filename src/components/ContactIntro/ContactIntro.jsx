@@ -22,7 +22,7 @@ export default function ContactIntro () {
               '
           >
             <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium. Voluptatem sequi nesciunt, neque porro quisquam est qui dolorem ipsum quia dolor sit amet. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit. Nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur?
+              I’m currently exploring new opportunities to build thoughtful, reliable Ruby and Rails apps with teams who care about the people behind the product. I’m especially interested in remote roles where I can keep growing, pair with talented engineers, and tackle meaningful problems. If you know a team that could use a Rails developer with a knack for debugging, integrations, and user experience — I’d love to connect. Check out my GitHub or LinkedIn to see what I’ve been working on, then drop me a note here!
             </p>
             <Social color="fill-greyish-dark-blue" />
           </div>

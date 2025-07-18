@@ -45,9 +45,12 @@ export default function About () {
             '
             >About Me
             </h2>
-            <p className='font-thin
-              '
-            >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel ligula id odio scelerisque aliquet. Integer non nisi vitae justo efficitur sagittis. Vivamus dictum, odio non vehicula gravida, nunc arcu laoreet metus, vel ultricies odio justo nec odio. Praesent sit amet feugiat enim. Duis aliquam, erat eget gravida vehicula, ligula elit blandit eros, nec vehicula purus odio ac libero. Integer auctor elit nec erat pharetra feugiat.
+            <p className='font-thin'>
+              I’m a software engineer who loves building user-first apps. I thrive on untangling bugs, writing strong tests, and making sure the code works for the people who rely on it.
+
+My background in QA, customer experience, supply chain, and fulfillment means I understand how good software keeps real-world operations running smoothly. I ask good questions, bridge gaps, and keep projects moving — with a bias for clear, reliable solutions.
+
+Outside of coding, I experiment with digital art, formulating skincare products, and playing various music styles with local musicians.
             </p>
           </article>
             <Button

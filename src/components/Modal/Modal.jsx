@@ -5,44 +5,32 @@ import { motion } from 'motion/react'
 import ModalContext from '../../store/modal-context'
 
 export function Modal () {
-  const { closeModal } = use(ModalContext)
-
-  // wip
-  const [isVisible, setIsVisible] = useState(true)
-
-  const toggleModal = () => {
-    setIsVisible(!isVisible)
-  }
-
   const modalRef = useRef()
-  // console.log('modalRef.current:', modalRef.current)
+
+  const { modalState, closeModal } = use(ModalContext)
 
   const handleClickOutside = (event) => {
-    console.log(modalRef.current && !modalRef.current.contains(event.target))
-    if (modalRef.current && !modalRef.current.contains(event.target)) {
-      // toggleModal()
+    const hamburger = document.getElementById('hamburger-menu')
+
+    const shouldCloseModal = modalRef.current &&
+        !modalRef.current.contains(event.target) &&
+        !hamburger.contains(event.target) &&
+        modalState
+
+    if(shouldCloseModal){
       closeModal()
-      // setIsVisible(true);
     }
   }
 
   useEffect(() => {
-    if(isVisible){
-      console.log('1')
+    if(modalState){
       document.addEventListener('mousedown', handleClickOutside)
     }
 
     return () => {
-      console.log('2')
       document.removeEventListener('mousedown', handleClickOutside)
     }
-  }, [isVisible])
-
-
-
-  // const closeModal = () => {
-  //   setIsVisible(false)
-  // }
+  }, [modalState])
 
   const location = useLocation()
 
@@ -50,7 +38,7 @@ export function Modal () {
     <>
       <div
         className='fixed z-10 top-20 right-8 size-50 md:hidden'
-        style={{ display: isVisible ? 'inline-block' : 'none' }}
+        style={{ display: modalState ? 'inline-block' : 'none' }}
         ref={modalRef}
       >
         <motion.div

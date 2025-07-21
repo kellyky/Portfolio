@@ -1,17 +1,45 @@
 import { createPortal } from 'react-dom'
-import { use } from 'react'
+import { use, useEffect, useRef, useState } from 'react'
 import { Link, useLocation } from 'react-router'
 import { motion } from 'motion/react'
 import ModalContext from '../../store/modal-context'
 
 export function Modal () {
-  const { closeModal } = use(ModalContext)
+  const modalRef = useRef()
+
+  const { modalState, closeModal } = use(ModalContext)
+
+  const handleClickOutside = (event) => {
+    const hamburger = document.getElementById('hamburger-menu')
+
+    const shouldCloseModal = modalRef.current &&
+        !modalRef.current.contains(event.target) &&
+        !hamburger.contains(event.target) &&
+        modalState
+
+    if(shouldCloseModal){
+      closeModal()
+    }
+  }
+
+  useEffect(() => {
+    if(modalState){
+      document.addEventListener('mousedown', handleClickOutside)
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside)
+    }
+  }, [modalState])
+
   const location = useLocation()
-  console.log('path: ', location.pathname)
 
   return createPortal(
     <>
-      <div className='fixed z-10 top-20 right-8 size-50 md:hidden'
+      <div
+        className='fixed z-10 top-20 right-8 size-50 md:hidden'
+        style={{ display: modalState ? 'inline-block' : 'none' }}
+        ref={modalRef}
       >
         <motion.div
           key='modal'

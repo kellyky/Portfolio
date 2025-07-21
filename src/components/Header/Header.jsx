@@ -47,7 +47,8 @@ export default function Header () {
       <div className='block md:hidden'>
         <button
           onClick={closeModal}
-          id='hamburger-menu' aria-label='hamburger menu'
+          id='hamburger-menu'
+          aria-label='hamburger menu'
         >
           <HamburgerMenu hide={modalState} />
         </button>

@@ -1,17 +1,57 @@
 import { createPortal } from 'react-dom'
-import { use } from 'react'
+import { use, useEffect, useRef, useState } from 'react'
 import { Link, useLocation } from 'react-router'
 import { motion } from 'motion/react'
 import ModalContext from '../../store/modal-context'
 
 export function Modal () {
   const { closeModal } = use(ModalContext)
+
+  // wip
+  const [isVisible, setIsVisible] = useState(true)
+
+  const toggleModal = () => {
+    setIsVisible(!isVisible)
+  }
+
+  const modalRef = useRef()
+  // console.log('modalRef.current:', modalRef.current)
+
+  const handleClickOutside = (event) => {
+    console.log(modalRef.current && !modalRef.current.contains(event.target))
+    if (modalRef.current && !modalRef.current.contains(event.target)) {
+      // toggleModal()
+      closeModal()
+      // setIsVisible(true);
+    }
+  }
+
+  useEffect(() => {
+    if(isVisible){
+      console.log('1')
+      document.addEventListener('mousedown', handleClickOutside)
+    }
+
+    return () => {
+      console.log('2')
+      document.removeEventListener('mousedown', handleClickOutside)
+    }
+  }, [isVisible])
+
+
+
+  // const closeModal = () => {
+  //   setIsVisible(false)
+  // }
+
   const location = useLocation()
-  console.log('path: ', location.pathname)
 
   return createPortal(
     <>
-      <div className='fixed z-10 top-20 right-8 size-50 md:hidden'
+      <div
+        className='fixed z-10 top-20 right-8 size-50 md:hidden'
+        style={{ display: isVisible ? 'inline-block' : 'none' }}
+        ref={modalRef}
       >
         <motion.div
           key='modal'

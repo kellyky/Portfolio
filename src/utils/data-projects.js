@@ -2,14 +2,14 @@ export const PROJECTS = [
   {
     id: 1,
     name: 'Temperature Converter',
-    description: 'This project required me to build a fully responsive landing page to the designs provided. I used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, such as the testimonial slider.',
+    description: 'A Ruby CLI app that converts temperatures between 7+ units including Celsius, Fahrenheit, and Kelvin, parsing flexible user input with doctested validation and clear output reports.',
     image: '/assets/images/projects/portfolioPage/temperature-converter.png',
     imageDesktop: '/assets/images/projects/portfolioPage/temperature-converter-desktop.png',
     projectInfo: {
-      languages: 'Ruby / Ruby Doctest',
-      concepts: 'Back End Development / Ruby Library',
-      link: 'https://git.sr.ht/~kotp/KellysKodingKompendium/tree/master/item/rubylearning/1_week/2c_convert/',
-      background: 'This project was a front-end  challenge from Frontend Mentor. It’s a platform that enables you to practice building websites to a design and project brief. Each challenge includes mobile and desktop designs to show how the website should look at different screen sizes. Creating these projects has helped me refine my workflow and solve real-world coding problems. I’ve learned something new with each project, helping me to improve and adapt my style.',
+      languages: 'Ruby',
+      concepts: 'Command-line applications, Object-oriented design, Data structures, Regular expressions.',
+      link: 'https://git.sr.ht/~kells/temperature-converter-library',
+      background: 'A Ruby command-line app that converts temperatures between multiple scales with flexible input parsing, accurate unit conversions, and clear output. The design uses focused classes, modules, and immutable data structures to handle edge cases like impossible temperatures. Tested with doctests to ensure reliability and easy future extension.',
       hero: [
         '/assets/images/projects/projectPages/projectZero/hero-mobile.png',
         '/assets/images/projects/projectPages/projectZero/hero-tablet.png',

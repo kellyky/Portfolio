@@ -1,24 +1,68 @@
+import { use, useEffect, useRef, useState } from 'react'
 import { createPortal } from 'react-dom'
 import { Link } from 'react-router'
 import Confetti from 'react-confetti'
 import { useWindowSize } from 'react-use'
 import Button from '../Button/Button'
 import { PaperAirplane } from '../../assets/icons/PaperAirplane'
+import ModalContext from '../../store/modal-context'
 
 export default function FormSuccessModal () {
   const { width, height } = useWindowSize()
+  const formSuccessRef = useRef(null)
+
+  const [isVisible, setIsVisible] = useState(true)
+  const { modalState, closeModal } = use(ModalContext)
+
+  console.log('modalState', modalState)
+
+  const toggleModal = () => {
+    setIsVisible(!isVisible)
+  }
+
+  const closeSuccessModal = () => {
+    setIsVisible(false);
+  }
+
+
+  const handleClickOutside = (event) => {
+    const shouldCloseModal = formSuccessRef.current &&
+      !formSuccessRef.current.contains(event.target)
+
+    if (shouldCloseModal) {
+      closeSuccessModal()
+      closeModal()
+    }
+  }
+
+  useEffect(() => {
+    if (isVisible) {
+      document.addEventListener('mousedown', handleClickOutside)
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside)
+    }
+  }, [isVisible])
+
+  console.log('isVisible', isVisible)
 
   return createPortal(
     <>
       {
-        <Confetti
-          width={width}
-          height={height}
-          recycle={false}
-          numberOfPieces={150}
-        /> }
+       <Confetti
+         width={width}
+         height={height}
+         recycle={false}
+         numberOfPieces={150}
+       />
+      }
 
-      <div className='
+
+      <div
+        style={{ display: isVisible ? 'inline-block' : 'none' }}
+        ref={formSuccessRef}
+        className='
         md:size-1/5
         '>
 
@@ -37,6 +81,7 @@ export default function FormSuccessModal () {
           md:flex-row
           h-fit
           lg:max-w-2xl
+          z-15
           '
           open
         >

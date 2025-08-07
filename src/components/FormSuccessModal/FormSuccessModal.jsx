@@ -1,3 +1,4 @@
+import { useEffect, useRef, useState } from 'react'
 import { createPortal } from 'react-dom'
 import { Link } from 'react-router'
 import Confetti from 'react-confetti'
@@ -7,18 +8,55 @@ import { PaperAirplane } from '../../assets/icons/PaperAirplane'
 
 export default function FormSuccessModal () {
   const { width, height } = useWindowSize()
+  const formSuccessRef = useRef(null)
+
+  const [isVisible, setIsVisible] = useState(true)
+
+  const toggleModal = () => {
+    setIsVisible(!isVisible)
+  }
+
+  const closeModal = () => {
+    setIsVisible(false);
+  }
+
+  const handleClickOutside = (event) => {
+    const shouldCloseModal = formSuccessRef.current &&
+      !formSuccessRef.current.contains(event.target)
+
+    if (shouldCloseModal) {
+      closeModal()
+    }
+  }
+
+  useEffect(() => {
+    if (isVisible) {
+      document.addEventListener('mousedown', handleClickOutside)
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside)
+    }
+  }, [isVisible])
+
+  console.log('isVisible', isVisible)
 
   return createPortal(
     <>
       {
-        <Confetti
-          width={width}
-          height={height}
-          recycle={false}
-          numberOfPieces={150}
-        /> }
+       <Confetti
+         width={width}
+         height={height}
+         recycle={false}
+         numberOfPieces={150}
+       />
+      }
 
-      <div className='
+
+      <div
+        style={{ display: isVisible ? 'inline-block' : 'none' }}
+        ref={formSuccessRef}
+        className='
         md:size-1/5
         '>
 

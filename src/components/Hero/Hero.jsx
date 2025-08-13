@@ -37,7 +37,7 @@ export default function Hero () {
           text-shadow-sm/30
           '
         >
-          Hey, I&rsquo;m Kelly Popko and I am a software developer
+          I&rsquo;m Kelly Popko and I love coding solutions for real people that solve real problems.
         </h1>
         <a
           href='#about-me'

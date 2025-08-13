@@ -179,18 +179,17 @@ export async function action({ request }) {
   }
 
   try {
-    const response = await fetch(import.meta.env.VITE_FORMSPREE_API, {
-      method: "POST",
-      headers:  {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify(postData)
-    })
+    // const response = await fetch(import.meta.env.VITE_FORMSPREE_API, {
+    //   method: "POST",
+    //   headers:  {
+    //     "Content-Type": "application/json"
+    //   },
+    //   body: JSON.stringify(postData)
+    // })
 
-    if (response.ok) {
+    // if (response.ok) {
       return { success: true }
-
-    }
+//     }
   } catch (error) {
     console.log("The form did not send")
     console.log(error)

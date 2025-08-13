@@ -22,7 +22,8 @@ export default function ContactIntro () {
               '
           >
             <p>
-              I’m currently exploring new opportunities to build thoughtful, reliable Ruby and Rails apps with teams who care about the people behind the product. I’m especially interested in remote roles where I can keep growing, pair with talented engineers, and tackle meaningful problems. If you know a team that could use a Rails developer with a knack for debugging, integrations, and user experience — I’d love to connect. Check out my GitHub or LinkedIn to see what I’ve been working on, then drop me a note here!
+              I’m seeking backend or full-stack roles where I can make an impact and keep growing—ideally Ruby/Rails backend, remote/hybrid, or local to the Milwaukee area. I love building tools that make life easier for both internal teams and external customers. If you know of opportunities—or just want to reconnect—let’s talk!
+Reach out if you would like to collaborate — or if you know an  a team that could use a Rails developer with a knack for debugging, integrations, and user experience — I’d love to connect. Check out my GitHub or LinkedIn to see what I’ve been working on, then drop me a note here!
             </p>
             <Social color="fill-greyish-dark-blue" />
           </div>

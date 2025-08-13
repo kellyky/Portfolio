@@ -46,11 +46,7 @@ export default function About () {
             >About Me
             </h2>
             <p className='font-thin'>
-              I’m a software engineer who loves building user-first apps. I thrive on untangling bugs, writing strong tests, and making sure the code works for the people who rely on it.
-
-My background in QA, customer experience, supply chain, and fulfillment means I understand how good software keeps real-world operations running smoothly. I ask good questions, bridge gaps, and keep projects moving — with a bias for clear, reliable solutions.
-
-Outside of coding, I experiment with digital art, formulating skincare products, and playing various music styles with local musicians.
+              I love building tools that make life easier for both internal teams and external customers. My path started at Tuft & Needle as employee #3, where I wore many hats—customer experience specialist, software QA, and eventually software engineer. All of this gave me a deep empathy for end-users and a knack for spotting issues before they reach them.
             </p>
           </article>
             <Button

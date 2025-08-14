@@ -1,5 +1,5 @@
 import { createPortal } from 'react-dom'
-import { use, useEffect, useRef, useState } from 'react'
+import { use, useEffect, useRef } from 'react'
 import { Link, useLocation } from 'react-router'
 import { motion } from 'motion/react'
 import ModalContext from '../../store/modal-context'
@@ -17,7 +17,7 @@ export function Modal () {
         !hamburger.contains(event.target) &&
         modalState
 
-    if(shouldCloseModal){
+    if (shouldCloseModal) {
       closeModal()
     }
   }
@@ -31,7 +31,7 @@ export function Modal () {
 
     document.addEventListener('keydown', handleKeyDown)
 
-    if(modalState){
+    if (modalState) {
       document.addEventListener('mousedown', handleClickOutside)
     }
 
@@ -40,8 +40,6 @@ export function Modal () {
       document.removeEventListener('mousedown', handleClickOutside)
     }
   }, [modalState])
-
-  const location = useLocation()
 
   return createPortal(
     <>
@@ -63,35 +61,32 @@ export function Modal () {
           '
         >
           <motion.ul
-            initial={{
-              opacity: 0
-            }}
-
-            animate={{
-              opacity: 1
-            }}
-
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
             transition={{
               delay: 0.3,
               ease: 'easeInOut'
             }}
-
             exit={{
               opacity: 0,
-              duration: 100,
+              duration: 100
             }}
-
             className='
-
-            h-full
-            flex flex-col items-center justify-center gap-8
-            uppercase text-xs tracking-widest
-            overflow-hidden
+              h-full
+              flex flex-col items-center justify-center gap-8
+              uppercase text-xs tracking-widest
+              overflow-hidden
             '
           >
-            <li><Link to='/' onClick={closeModal} >Home</Link></li>
-            <li><Link to='/portfolio' onClick={closeModal} >Portfolio</Link></li>
-            <li><Link to='/contact' onClick={closeModal} >Contact Me</Link></li>
+            <li>
+              <Link to='/' onClick={closeModal}>Home</Link>
+            </li>
+            <li>
+              <Link to='/portfolio' onClick={closeModal}>Portfolio</Link>
+            </li>
+            <li>
+              <Link to='/contact' onClick={closeModal}>Contact Me</Link>
+            </li>
           </motion.ul>
         </motion.div>
       </div>

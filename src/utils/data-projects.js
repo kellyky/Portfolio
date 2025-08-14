@@ -13,12 +13,12 @@ export const PROJECTS = [
       hero: [
         '/assets/images/projects/projectPages/projectZero/hero-mobile.png',
         '/assets/images/projects/projectPages/projectZero/hero-tablet.png',
-        '/assets/images/projects/projectPages/projectZero/converter-desktop.png',
+        '/assets/images/projects/projectPages/projectZero/converter-desktop.png'
       ],
       previewOne: [
         '/assets/images/projects/projectPages/projectZero/staticOne-mobile.png',
         '/assets/images/projects/projectPages/projectZero/staticOne-tablet.png',
-        '/assets/images/projects/projectPages/projectZero/staticOne-desktop.png',
+        '/assets/images/projects/projectPages/projectZero/staticOne-desktop.png'
       ],
       previewTwo: [
         '/assets/images/projects/projectPages/projectZero/staticTwo-mobile.png',
@@ -42,12 +42,12 @@ export const PROJECTS = [
       hero: [
         '/assets/images/projects/projectPages/projectOne/hero-mobile.png',
         '/assets/images/projects/projectPages/projectOne/hero-tablet.png',
-        '/assets/images/projects/projectPages/projectOne/hero-desktop.png',
+        '/assets/images/projects/projectPages/projectOne/hero-desktop.png'
       ],
       previewOne: [
         '/assets/images/projects/projectPages/projectOne/staticOne-mobile.png',
         '/assets/images/projects/projectPages/projectOne/staticOne-tablet.png',
-        '/assets/images/projects/projectPages/projectOne/staticOne-desktop.png',
+        '/assets/images/projects/projectPages/projectOne/staticOne-desktop.png'
       ],
       previewTwo: [
         '/assets/images/projects/projectPages/projectOne/staticTwo-mobile.png',
@@ -70,12 +70,12 @@ export const PROJECTS = [
       hero: [
         '/assets/images/projects/projectPages/projectTwo/hero-mobile.png',
         '/assets/images/projects/projectPages/projectTwo/hero-tablet.png',
-        '/assets/images/projects/projectPages/projectTwo/hero-desktop.png',
+        '/assets/images/projects/projectPages/projectTwo/hero-desktop.png'
       ],
       previewOne: [
         '/assets/images/projects/projectPages/projectTwo/staticOne-mobile.png',
         '/assets/images/projects/projectPages/projectTwo/staticOne-tablet.png',
-        '/assets/images/projects/projectPages/projectTwo/staticOne-desktop.png',
+        '/assets/images/projects/projectPages/projectTwo/staticOne-desktop.png'
       ],
       previewTwo: [
         '/assets/images/projects/projectPages/projectTwo/staticTwo-mobile.png',
@@ -98,12 +98,12 @@ export const PROJECTS = [
       hero: [
         '/assets/images/projects/projectPages/projectThree/hero-mobile.png',
         '/assets/images/projects/projectPages/projectThree/hero-tablet.png',
-        '/assets/images/projects/projectPages/projectThree/hero-desktop.png',
+        '/assets/images/projects/projectPages/projectThree/hero-desktop.png'
       ],
       previewOne: [
         '/assets/images/projects/projectPages/projectThree/staticOne-mobile.png',
         '/assets/images/projects/projectPages/projectThree/staticOne-tablet.png',
-        '/assets/images/projects/projectPages/projectThree/staticOne-desktop.png',
+        '/assets/images/projects/projectPages/projectThree/staticOne-desktop.png'
       ],
       previewTwo: [
         '/assets/images/projects/projectPages/projectThree/staticTwo-mobile.png',

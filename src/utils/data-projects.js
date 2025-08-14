@@ -13,7 +13,7 @@ export const PROJECTS = [
       hero: [
         '/assets/images/projects/projectPages/projectZero/hero-mobile.png',
         '/assets/images/projects/projectPages/projectZero/hero-tablet.png',
-        '/assets/images/projects/projectPages/projectZero/hero-desktop.png',
+        '/assets/images/projects/projectPages/projectZero/converter-desktop.png',
       ],
       previewOne: [
         '/assets/images/projects/projectPages/projectZero/staticOne-mobile.png',

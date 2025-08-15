@@ -1,4 +1,4 @@
-import { use } from 'react'
+import { use, useEffect, useState, useRef } from 'react'
 import { AnimatePresence } from 'motion/react'
 import { NavLink } from 'react-router'
 import { HamburgerMenu } from '../../assets/icons/HamburgerMenu'
@@ -8,10 +8,41 @@ import ModalContext from '../../store/modal-context'
 
 export default function Header () {
   const { modalState, closeModal } = use(ModalContext)
+  const [isVisible, setIsVisible] = useState(true)
+  const lastScrollY = useRef(0)
+  const timeoutId = useRef(null)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY
+
+      // Si baja, ocultar
+      if (currentScrollY > lastScrollY.current) {
+        setIsVisible(false)
+      } else {
+        setIsVisible(true)
+      }
+
+      lastScrollY.current = currentScrollY
+
+      // Si deja de hacer scroll, mostrar después de 150ms
+      clearTimeout(timeoutId.current)
+      timeoutId.current = setTimeout(() => {
+        setIsVisible(true)
+      }, 150)
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
 
   return (
-    <header className='sticky top-0 z-3 flex justify-between items-center
-      p-8 md:py-8 lg:py-8 bg-very-light-grey lg:px-30'
+    <header
+      className={`sticky top-0 z-3 flex justify-between items-center
+        p-8 md:py-8 lg:py-8 bg-very-light-grey lg:px-30
+        transition-transform duration-300
+        ${isVisible ? 'translate-y-0' : '-translate-y-full'}
+      `}
     >
       <div>
         <Logo />

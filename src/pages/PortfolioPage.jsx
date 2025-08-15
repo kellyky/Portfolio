@@ -1,18 +1,28 @@
 import { PROJECTS } from '../utils/data-projects'
 import Button from '../components/Button/Button'
 import Contact from '../components/Contact/Contact'
+import { motion } from 'framer-motion'
 
 function PortfolioPage () {
+
+  const fadeInRight = {
+    hidden: { opacity: 0, x: 50 },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: { duration: 0.6, ease: 'easeOut' }
+    }
+  }
+
   return (
     <>
-      <ul className='flex flex-col items-center
-        md:gap-20
-        '
+      <ul
+        className='flex flex-col items-center md:gap-20'
       >
 
         {
           PROJECTS.map(project => (
-            <li
+            <motion.li
               key={project.id}
               className='flex flex-col gap-8
               md:flex-row
@@ -21,6 +31,10 @@ function PortfolioPage () {
               md:max-w-[689px] md:max-h-[410px] md:gap-12
               lg:max-w-[1025px] lg:gap-12
               '
+            variants={fadeInRight}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
             >
               <img
                 src={project.imageDesktop}
@@ -54,7 +68,7 @@ function PortfolioPage () {
                   >View Project
                 </Button>
               </article>
-            </li>
+            </motion.li>
           ))
         }
       </ul>

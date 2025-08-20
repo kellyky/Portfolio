@@ -1,4 +1,6 @@
-export default function Arrows () {
+import { motion } from 'framer-motion'
+
+export default function Arrows() {
   return (
     <svg
       className='stroke-current transition-all duration-300'
@@ -15,17 +17,44 @@ export default function Arrows () {
         fill='black'
         stroke='none'
       />
-      <path
+
+      <motion.path
+        d='M16 18L24 22L32 18'
+        className='group-hover:stroke-white'
+        animate={{ opacity: [0.2, 1, 0.2] }}
+        transition={{
+          duration: 0.8,
+          repeat: Infinity,
+          repeatType: 'loop',
+          ease: 'easeInOut',
+          delay: 0
+        }}
+      />
+
+      <motion.path
+        d='M16 22L24 26L32 22'
+        className='group-hover:stroke-white'
+        animate={{ opacity: [0.2, 1, 0.2] }}
+        transition={{
+          duration: 0.8,
+          repeat: Infinity,
+          repeatType: 'loop',
+          ease: 'easeInOut',
+          delay: 0.2
+        }}
+      />
+
+      <motion.path
         d='M16 26L24 30L32 26'
         className='group-hover:stroke-white'
-      />
-      <path
-        opacity='0.5' d='M16 22L24 26L32 22'
-        className='group-hover:stroke-white'
-      />
-      <path
-        opacity='0.25' d='M16 18L24 22L32 18'
-        className='group-hover:stroke-white'
+        animate={{ opacity: [0.2, 1, 0.2] }}
+        transition={{
+          duration: 0.8,
+          repeat: Infinity,
+          repeatType: 'loop',
+          ease: 'easeInOut',
+          delay: 0.4
+        }}
       />
     </svg>
   )

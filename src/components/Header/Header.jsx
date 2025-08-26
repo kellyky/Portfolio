@@ -17,7 +17,6 @@ export default function Header () {
     const handleScroll = () => {
       const currentScrollY = window.scrollY
 
-      // Si baja, ocultar
       if (currentScrollY > lastScrollY.current) {
         setIsVisible(false)
       } else {
@@ -26,7 +25,6 @@ export default function Header () {
 
       lastScrollY.current = currentScrollY
 
-      // Si deja de hacer scroll, mostrar después de 150ms
       clearTimeout(timeoutId.current)
       timeoutId.current = setTimeout(() => {
         setIsVisible(true)

@@ -74,7 +74,7 @@ export function Modal () {
             }}
             className='
               h-full
-              flex flex-col items-center justify-center gap-8
+              flex flex-col items-center justify-center gap-5
               uppercase text-xs tracking-widest
               overflow-hidden
             '

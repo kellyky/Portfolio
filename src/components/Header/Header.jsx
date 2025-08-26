@@ -1,4 +1,5 @@
 import { use, useEffect, useState, useRef } from 'react'
+import Resume from '/resume/Resume.pdf'
 import { AnimatePresence } from 'motion/react'
 import { NavLink } from 'react-router'
 import { HamburgerMenu } from '../../assets/icons/HamburgerMenu'
@@ -66,6 +67,15 @@ export default function Header () {
             >Portfolio
             </NavLink>
           </li>
+          <li>
+            <NavLink
+              className={({ isActive }) => isActive ? 'text-muted-cyan' : ''}
+              to={Resume}
+              target='_blank'
+            >
+              Resume
+            </NavLink>
+            </li>
           <li>
             <NavLink
               to='/contact'

@@ -1,4 +1,5 @@
 import { createPortal } from 'react-dom'
+import Resume from '/resume/Resume.pdf'
 import { use, useEffect, useRef } from 'react'
 import { Link, useLocation } from 'react-router'
 import { motion } from 'motion/react'
@@ -83,6 +84,9 @@ export function Modal () {
             </li>
             <li>
               <Link to='/portfolio' onClick={closeModal}>Portfolio</Link>
+            </li>
+            <li>
+              <Link to={Resume} target='_blank' onClick={closeModal}>Resume</Link>
             </li>
             <li>
               <Link to='/contact' onClick={closeModal}>Contact Me</Link>

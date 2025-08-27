@@ -42,3 +42,6 @@ img {
   flex-shrink: 0;
 }
 
+source {
+  border: none;
+}

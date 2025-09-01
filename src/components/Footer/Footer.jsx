@@ -5,11 +5,11 @@ import Resume from '/resume/Resume.pdf'
 
 export default function Footer () {
   return (
-    <footer className='bottom-0 md:p-4 gap-8 lg:px-20
+    <footer className='bottom-0 p-12 md:p-8 gap-8 lg:px-20
       flex flex-col md:flex-row items-center justify-between
       bg-greyish-dark-blue text-very-light-grey'
     >
-      <nav className='w-full m-8 gap-8 md:gap-4 flex flex-col md:flex-row md:justify-between items-center'>
+      <nav className='w-full gap-8 md:gap-4 flex flex-col md:flex-row md:justify-between items-center'>
         <ul className='uppercase gap-6 flex flex-col
           md:flex-row items-center'
         >

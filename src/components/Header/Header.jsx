@@ -54,30 +54,38 @@ export default function Header () {
           <li>
             <NavLink
               to='/'
-              className={({ isActive }) => isActive ? 'text-muted-cyan' : ''}
+              className={({ isActive }) =>
+                `${isActive ? 'text-muted-cyan' : 'underline-hover-effect'}
+              `}
             >Home
             </NavLink>
           </li>
           <li>
             <NavLink
               to='/portfolio'
-              className={({ isActive }) => isActive ? 'text-muted-cyan' : ''}
+              className={({ isActive }) =>
+                `${isActive ? 'text-muted-cyan' : 'underline-hover-effect'}
+                `}
             >Portfolio
             </NavLink>
           </li>
           <li>
             <NavLink
-              className={({ isActive }) => isActive ? 'text-muted-cyan' : ''}
+              className={({ isActive }) =>
+                `${isActive ? 'text-muted-cyan' : 'underline-hover-effect'}
+                `}
               to={Resume}
               target='_blank'
             >
               Resume
             </NavLink>
-            </li>
+          </li>
           <li>
             <NavLink
               to='/contact'
-              className={({ isActive }) => isActive ? 'text-muted-cyan' : ''}
+              className={({ isActive }) =>
+                `${isActive ? 'text-muted-cyan' : 'underline-hover-effect'}
+                `}
             >Contact Me
             </NavLink>
           </li>

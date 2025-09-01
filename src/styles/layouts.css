@@ -45,3 +45,26 @@ img {
 source {
   border: none;
 }
+
+.underline-hover-effect {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 0.10rem;
+  text-decoration: none;
+}
+
+.underline-hover-effect::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  background-color: var(--muted-cyan);
+  transition: width 0.25s ease-out;
+}
+
+.underline-hover-effect:hover::before {
+  width: 100%;
+}
+

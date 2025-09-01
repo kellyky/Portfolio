@@ -135,9 +135,9 @@ export default function ContactForm () {
               items-center justify-center
               uppercase tracking-wide
               bg-dark-blue text-white
-              hover:bg-muted-cyan hover:text-white
-              transition-all delay-300 duration-150 ease-in-out
-              ${ submitButton ? 'bg-grey' : null }
+              ${submitButton
+                ? 'bg-grey '
+                : 'hover:bg-muted-cyan hover:text-white transition-all delay-100 duration-100 ease-in0out'}
             `}
           >
             Send Message

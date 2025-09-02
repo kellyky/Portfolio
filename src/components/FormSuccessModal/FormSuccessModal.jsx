@@ -1,5 +1,4 @@
 import { createPortal } from 'react-dom'
-import { Link } from 'react-router'
 import Confetti from 'react-confetti'
 import { useWindowSize } from 'react-use'
 import Button from '../Button/Button'

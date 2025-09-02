@@ -1,7 +1,7 @@
 import { createPortal } from 'react-dom'
 import Resume from '/resume/Resume.pdf'
 import { use, useEffect, useRef } from 'react'
-import { Link, useLocation } from 'react-router'
+import { Link } from 'react-router'
 import { motion } from 'motion/react'
 import ModalContext from '../../store/modal-context'
 

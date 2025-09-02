@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Form, redirect, useActionData } from 'react-router-dom'
+import { Form, useActionData } from 'react-router-dom'
 import Button from '../Button/Button'
 import FormSuccessModal from '../FormSuccessModal/FormSuccessModal'
 

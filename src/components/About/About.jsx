@@ -46,7 +46,7 @@ export default function About () {
             >About Me
             </h2>
             <p className='font-thin'>
-              I love building tools that make life easier for both internal teams and external customers. My path started at Tuft & Needle as employee #3, where I wore many hats—customer experience specialist, software QA, and eventually software engineer. All of this gave me a deep empathy for end-users and a knack for spotting issues before they reach them.
+              Software Engineer specializing in Ruby on Rails and React, with strengths in debugging, TDD, and API integrations. I build production-ready, user-first tools that remove friction for teams and customers. My earlier roles in QA, Customer Experience, and Supply Chain sharpened my ability to spot issues before they reach production and align engineering with real user needs. In my free time, I code with peers, volunteer, and explore creative outlets like digital art and photography.
             </p>
           </article>
             <Button

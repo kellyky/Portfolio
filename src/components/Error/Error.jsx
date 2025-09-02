@@ -4,7 +4,7 @@ import { isRouteErrorResponse } from 'react-router-dom'
 function Error () {
   const error = useRouteError()
 
-  if(isRouteErrorResponse(error)){
+  if (isRouteErrorResponse(error)) {
     return (
       <div>
         <h1>Oops!</h1>
@@ -16,7 +16,6 @@ function Error () {
   } else {
     return <div>Oops</div>
   }
-
 }
 
 export default Error

@@ -19,7 +19,7 @@ export default function Footer () {
           <li className='underline-hover-effect'><Link to={Resume} target='_blank'>Resume</Link></li>
           <li className='underline-hover-effect'><Link to='/contact'>Contact Me</Link></li>
         </ul>
-      <Social color='fill-very-light-grey' />
+        <Social color='fill-very-light-grey' />
       </nav>
     </footer>
   )

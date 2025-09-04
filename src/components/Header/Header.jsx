@@ -11,36 +11,32 @@ export default function Header () {
   const { modalState, closeModal } = use(ModalContext)
   const [isVisible, setIsVisible] = useState(true)
   const lastScrollY = useRef(0)
-  const timeoutId = useRef(null)
 
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY
 
-      if (currentScrollY > lastScrollY.current) {
-        setIsVisible(false)
-      } else {
+      if (currentScrollY < lastScrollY.current) {
         setIsVisible(true)
+      } else {
+        setIsVisible(false)
       }
 
       lastScrollY.current = currentScrollY
-
-      clearTimeout(timeoutId.current)
-      timeoutId.current = setTimeout(() => {
-        setIsVisible(true)
-      }, 150)
     }
 
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
+  const shouldBeVisible = modalState || isVisible
+
   return (
     <header
-      className={`sticky top-0 z-3 flex justify-between items-center
+      className={`sticky top-0 z-30 flex justify-between items-center
         p-8 md:py-8 lg:py-8 bg-very-light-grey lg:px-30
         transition-transform duration-300
-        ${isVisible ? 'translate-y-0' : '-translate-y-full'}
+        ${shouldBeVisible ? 'translate-y-0' : '-translate-y-full'}
       `}
     >
       <div>
@@ -48,32 +44,33 @@ export default function Header () {
       </div>
       <nav className='invisible md:visible'>
         <ul className='uppercase hidden md:flex md:gap-12 lg:gap-8
-          text-xs tracking-widest
-          '
+          text-xs tracking-widest'
         >
           <li>
             <NavLink
               to='/'
               className={({ isActive }) =>
-                `${isActive ? 'text-muted-cyan' : 'underline-hover-effect'}
-              `}
-            >Home
+                `${isActive ? 'text-muted-cyan' : 'underline-hover-effect'}`
+              }
+            >
+              Home
             </NavLink>
           </li>
           <li>
             <NavLink
               to='/portfolio'
               className={({ isActive }) =>
-                `${isActive ? 'text-muted-cyan' : 'underline-hover-effect'}
-                `}
-            >Portfolio
+                `${isActive ? 'text-muted-cyan' : 'underline-hover-effect'}`
+              }
+            >
+              Portfolio
             </NavLink>
           </li>
           <li>
             <NavLink
               className={({ isActive }) =>
-                `${isActive ? 'text-muted-cyan' : 'underline-hover-effect'}
-                `}
+                `${isActive ? 'text-muted-cyan' : 'underline-hover-effect'}`
+              }
               to={Resume}
               target='_blank'
             >
@@ -84,9 +81,10 @@ export default function Header () {
             <NavLink
               to='/contact'
               className={({ isActive }) =>
-                `${isActive ? 'text-muted-cyan' : 'underline-hover-effect'}
-                `}
-            >Contact Me
+                `${isActive ? 'text-muted-cyan' : 'underline-hover-effect'}`
+              }
+            >
+              Contact Me
             </NavLink>
           </li>
         </ul>
@@ -100,7 +98,6 @@ export default function Header () {
           <HamburgerMenu hide={modalState} />
         </button>
         <AnimatePresence mode='wait'>
-
           {modalState && <Modal />}
         </AnimatePresence>
       </div>

@@ -1,61 +1,39 @@
-<a name="readme-top"></a>
+# Portfolio
 
-# 📖 Portfolio <a name="about-project"></a>
+A mobile-first personal portfolio application built with React, Tailwind, and Vite.
+This project is deployed on Netlify and serves as my primary portfolio site.
 
-Mobile-first personal portfolio website using React and Tailwind, built from Figma design. (Thank you, Frontend Mentor!)
+This project was designed from a Figma layout and implemented using a component-based architecture with client-side routing, custom hooks, and modular styling.
 
-**Current Status**: In progress.
-Most pages are built and styled with stock imagery and text.
-TODO: Contact Form functionality, 'Not Found' page.
+## Highlights
 
-Once fully built and functional, I will personalize it - replacing stock text and images with my projects and photos.
+- Responsive, mobile-first design
+- Component-driven UI structure
+- Client-side routing
+- Custom React hooks
+- Modular styling with Tailwind
+- Built with Vite for fast development and builds
 
-## Tech Stack <a name="tech-stack"></a>
+## Tech Stack
 
-- React + JavaScript
-- Tailwind
-- Figma
+- React
+- JavaScript
+- Tailwind CSS
+- Vite
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## 💻 Getting Started <a name="getting-started"></a>
-
-1. Install `npm` and `nodejs` if not already installed.
-2. Clone repository and navigate to Portfolio.
+## Development
 
 ```sh
-git clone git@github.com:kellyky/Portfolio.git
-cd Portfolio
 npm install
-```
-
-### Usage
-
-```sh
 npm run dev
 ```
 
-Then in your browser, visit [http://localhost:5173/](http://localhost:5173/).
+Then visit:
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+```sh
+http://localhost:5173/
+```
 
-## Socials <a name="socials"></a>
+## Acknowledgments
 
-- GitHub: [@kellyky](https://github.com/githubhandle)
-- SourceHut: [~kells](https://sr.ht/~kells/)
-- Aavalam: [Aavalam/~kellyky](https://www.aavalam.org/~kellyky/)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/kelly-popko)
-- Medium: [Medium](https://medium.com/@kelpopko)
-- Dev: [@kelpopko](https://dev.to/kelpopko)
-- BlueSky: [Bluesky](https://bsky.app/profile/kellypopko.bsky.social)
-- rubysocial: [rubysocial](https://ruby.social/@kells)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## 🙏 Acknowledgments <a name="acknowledgements"></a>
-
-I would like to thank my friend Cesar for the nudge to dive into frontend and to more effectively showcase my work.
-Also, credit to Frontend Mentor for the Figma design and structure I used.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
+Thank you, Cesar, for the encouragement to explore frontend development and better showcase my work.
